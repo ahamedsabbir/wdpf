@@ -1,0 +1,17 @@
+/*
+x  small                                              <575px
+small                                                  
+Medium
+Large
+Extra large
+ Extra Extra large
+ */
+
+ .child{
+    border:5px solid var(--bs-blue);
+    height: 100px;
+    margin-bottom 10px;
+    text-align: center;
+    text-size:25px
+    font-weight:bold;
+ }

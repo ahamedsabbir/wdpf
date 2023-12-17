@@ -1,0 +1,206 @@
+
+:root{
+    --blue:#17A2B8;
+    --dark-blue:#0000FF;
+    --black:#1E1E1E;
+    --white:#FFFFFF;
+    --dark:#00394F;
+    --cadetblue:#138496;
+    --gray:#F8F9FA;
+    --teal:#17A2B8;
+    --dark-teal:#00394F;
+}
+/* ::-webkit-scrollbar{
+    overflow: hidden;
+} */
+/* basic part start here */
+body {
+    font-family: Nunito,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666;
+    text-align: left;
+    background-color: #fff;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0.5rem;
+    font-family: Handlee,cursive;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #00394f;    
+}
+/* basic part end here */
+/* header start here */
+.dropdown .dropdown-menu{
+    top:60px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.join_class{
+    /* background:var(--blue); */
+    background: var(--dark-blue);
+    color:var(--white);
+   
+}
+.join_class:hover{
+    background:var(--cadetblue);
+    color: var(--white);
+}
+/* header end here */
+/* banner starts here */
+.learn_more{
+    background: var(--dark);
+}
+.learn_more:hover{
+    background:var(--black);
+}
+/* banner ends here */
+/*main start here */
+.card{
+    background: var(--gray);
+}
+.card:hover{
+    box-shadow:4px 3px 8px var(--dark-teal);
+    /* transition:.5s; */
+}
+/*main end here */
+/* about us part start here */
+.section-title{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #17a2b8; */
+    color: var(--dark-blue);
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    width:30%;
+    left:165px;
+    height: 2px;
+    /* background: #17a2b8; */
+    background: var(--dark-blue);
+
+}
+/* about us end end here */
+/* popular part start here */
+.popular-section{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #17a2b8; */
+    color: var(--dark-blue);
+}
+.popular-section::before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 187px;
+    width: 30%;
+    height: 2px;
+    /* background:#17A2B8; */
+    background: var(--dark-blue);
+}
+.popular-section::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    width:30%;
+    left:187px;
+    height: 2px;
+    /* background: #17a2b8; */
+    background: var(--dark-blue);
+}
+/* popular part end here */
+/* book part start here */
+.book-section{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #17A2B8; */
+    color: var(--dark-blue);
+}
+.book-section::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 130px;
+    width: 35%;
+    height: 2px;
+    /* background: #17A2B8; */
+    background: var(--dark-blue);
+}
+/* book part end here */
+/* teachers part start here */
+.teacher-section{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #17a2b8; */
+    color: var(--dark-blue);
+}
+.teacher-section::before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 150px;
+    height: 2px;
+    width: 35%;
+    /* background: #17A2B8; */
+    background: var(--dark-blue);
+}
+.teacher-section::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 150px;
+    height: 2px;
+    width: 35%;
+    /* background: #17A2B8; */
+    background: var(--dark-blue);
+}
+/* teachers part end here */
+/* textimonial part start here */
+.testimonial-section{
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #17A2B8; */
+    color: var(--dark-blue);
+}
+.testimonial-section::before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 125px;
+    height: 2px;
+    width: 35%;
+    /* background: #17A2B8; */
+    background: var(--dark-blue);
+}
+.testimonial-section::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 125px;
+    height: 2px;
+    width: 35%;
+    /* background: #17A2B8; */
+    background: var(--dark-blue);
+}
+/* testimonial part end here */
+/* footer start here */
+.hr-style{
+    border: 2px solid;
+    border-bottom: none;
+    margin-top: 20px;
+}
+/* footer end here */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom validation Form: in form tag add class="needs-validation" novalidate </h1>
+        <form action="" class="needs-validation" novalidate autocomplete="off">
+            <div class="form-floating">                
+                <input type="text" name="uuname" class="form-control" id="myusername" placeholder="username" autocomplete="off" minlength="8" required>
+                <label for="myusername" class="form-label">User Name</label>
+                <div class="form-text">please input your registered username</div>
+                <div class="invalid-feedback">
+                    Username required and must be min 8 characters.
+                  </div>
+                  <div class="valid-feedback">
+                    Username is correct.
+                  </div>
+            </div>
+            <div  class="form-group">
+                <label for="" class="form-label">Password</label>
+                <input type="password" name="uname" class="form-control" required autocomplete="off" minlength="8" maxlength="20">
+                <div class="invalid-feedback">
+                    password required and must be min 8 to max 20 characters.
+                  </div>
+                  <div class="valid-feedback">
+                    password is ok.
+                  </div>
+            </div>
+            <div class="mt-1 form-group">
+                <input class="btn btn-outline-primary" type="submit" value="Login">
+                <input class="btn btn-outline-warning" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>

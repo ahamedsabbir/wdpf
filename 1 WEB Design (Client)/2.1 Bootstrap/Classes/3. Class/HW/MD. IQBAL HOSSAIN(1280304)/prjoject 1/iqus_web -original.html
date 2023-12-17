@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iqus_web</title>
+    <link rel="icon" href="tourist_place/plane.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            /* object-fit: cover; */
+            aspect-ratio: 2/1;
+        }
+
+        .crousal_image_width {
+            width: 450px;
+            height: 350px;
+        }
+
+        h1 {
+            text-align: left;
+            color: crimson;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-color: ; */
+            font-weight: bold;
+        }
+
+        #icon_place {
+            position: fixed;
+            left: -80px;
+            top: 150px;
+            transition: all 1s;
+        }
+
+        #icon_place:hover {
+            left: 0px;
+        }
+
+        #icon_place ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+        }
+
+        .no-blur {
+            text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="icon_place">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="logo/Facebook.png" alt="logo"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="logo/twitter.png" alt="logo"></a></li>
+                <li><a href="https://www.telegram.com/"><img src="logo/telegram.png" alt="logo"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="logo/yt.png" alt="logo"></a></li>
+                <li><a href="https://www.google.com/"><img src="logo/google.png" alt="logo"></a></li>
+            </ul>
+        </div>
+
+        <div style="display: inline-block; width: 100%; background-color: cadetblue;  ">
+            <div style="float: right; width: 60%; padding-top:5px;">
+                <h1 class="no-blur">Welcome to "iqu's world" </h1><br>
+                <p style="font-size: 20px; color:rgb(68, 20, 88)">(Get some exciting experience from here)</p>
+
+            </div>
+            <div style="float: left;padding-top: 5px;">
+                <img src="tourist_place/plane-removebg-preview.png" alt="" style="width: 200px; height: 80px;">
+            </div>
+        </div>
+        <p style="color:rgb(49, 88, 87); text-align: center;"><b>Tour Agency: www.iqusworld.com (visit our site)</b></p>
+
+        <hr>
+        <hr>
+        <marquee style="color: red;" behavior="alternet" direction="ltr|rtl"><i><b>
+                    <li>Get 50% Discount for couple. so let's enjoy...</li>
+                </b></i></marquee>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+
+                <!-- <a class="navbar-brand" href="#">Navigation-BAR</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <b>Are you boared ?</b> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Other_html_link/Newspaper.html">Newspaper</a></li>
+
+                                <li><a class="dropdown-item" href="Other_html_link/youtube.html">Youtube</a></li>
+                                <li><a class="dropdown-item" href="Other_html_link/novel/poem.html">Poem</a></li>
+                                <li><a class="dropdown-item" href="Other_html_link/The Division of Bangladesh/Home_Page.html">About Bangladesh</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <b>Which country do you travel ?</b> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                                <li><a class="dropdown-item" href="#">India</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li> -->
+                                <li><a class="dropdown-item" href="#">Japan</a></li>
+                                <li><a class="dropdown-item" href="#">Thailand</a></li>
+                                <li><a class="dropdown-item" href="#">China</a></li>
+                                <li><a class="dropdown-item" href="#">America</a></li>
+                                <li><a class="dropdown-item" href="#">Russia</a></li>
+                                <li><a class="dropdown-item" href="#">Germany</a></li>
+                                <li><a class="dropdown-item" href="#">Italy</a></li>
+                                <li><a class="dropdown-item" href="#">England</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-disabled="true">Buy Ticket</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- carousel start-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="tourist_place/1.webp" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <!-- <h5>Tajmohol</h5> -->
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="tourist_place/11.webp" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tourist_place/2.webp" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tourist_place/9.webp" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tourist_place/4.jpeg" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tourist_place/8.jpg" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tourist_place/7.jpg" class="d-block w-100 crousal_image_width" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the fourth slide.</p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carouse end -->
+        <!-- Attention -->
+
+        <div class="row">
+            <div class="col-6">
+                <h1>Attentaion</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Attentaion for Travel lover
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Most People go the wrong way: </strong> we are here for helping you to give
+                                correct and enjoyable moment.
+                                <code>For more info. communicate our customer care.</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                why are you here ??
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong> If you want safe journey, you are choose a right way.</strong> <br>
+                                <b>1.</b> we gave you a safety first. <br>
+                                <b>2.</b> our agency one of the best faithful agency. <br>
+                                <b> 3.</b> we achieved international licence. <br>
+                                <b>4.</b> most of the time we get some offer for our respective customer. <br>
+                                <b> 5.</b> we give you the opportunity to travel at the lowest cost. <br>
+                                <code>for buy ticket: www.iqusworld.com</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                warning
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>At the journey time you should becareful from local host:</strong> <br>
+                                Because they can trap you easily. <br>
+                                that's why, we arranged travel host for your safe journey.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- part 2 communication -->
+            <div class="col-6">
+                <h1>Communication</h1>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                            type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="false">Address</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="true">Contact</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                            aria-controls="disabled-tab-pane" aria-selected="false">Disabled</button>
+                    </li> -->
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <address>
+                            <b>Iqus travel agency..</b> <br>
+                            1. Dhaka Branch, Agargaon, Rahmat tower 1222. <br>
+                            2. Barishal Branch, Sador road, opposit of <br>
+                            BM college KADER Tower 5th floor.
+                        </address>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">Tie-up with "NOVO-AIR" Airlinse. <br> Trusted Partner for a safe journey.
+                        <br>
+                        <img src="tourist_place/plane.jpg" alt="" style="width: 200px; height: 100px;">
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0"> Any needed to ceo : <br>
+                        <a href="mailto:iqbalmd5692@gmail.com">Email: iqbalmd5692@gmail.com</a> <br>
+                        <a href="cell:01793689998">cell: 01793689998 </a> <br>
+                        Customer care: <br>
+                        +6540987 <br>
+                        +897556
+                    </div>
+                    <!-- <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                        tabindex="0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, veniam aliquam. Vel aliquam
+                        dolorum tempore,
+                        autem illo libero quos nesciunt aut fuga dolore doloribus necessitatibus optio dicta ex, odio
+                        modi?
+                    </div> -->
+                </div>
+                <!--  -->
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <!-- card -->
+
+        <h1 style="color: blueviolet;"><i><b>World most famouse places. <br>please visit here....</b></i></h1>
+        <div class="row">
+            <div class="card col-3">
+                <img src="Final tourist place/india2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">India</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 5000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/bangladesh.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bangladesh</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 2000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/Australia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Australia</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 10,000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 1 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/America.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">America</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 7000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 8 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/china.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">China</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 6000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 4 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/England.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">England</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 9000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/France.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">France</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 12,000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 2 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/German.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Germany</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 13,000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 7 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/italy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Italy</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 10,000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/russia.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Russia</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 8000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 6 mins ago</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/thailand2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Thailand</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 5000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated just now</small>
+                </div>
+            </div>
+            <div class="card col-3">
+                <img src="Final tourist place/thailand.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Maldives</h5>
+                    <p class="card-text">This is a most beautiful place in the world. you can visit top 10 place with
+                        lowest cost.
+                        <strong>package: only 7000 dollor</strong>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 10 mins ago</small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- card end -->
+        <hr>
+        <div style="text-align: center;">
+            <h1>Stay with us and enjoy your life.</h1>
+            <h2 style="text-align: center;"><code>visit more from.....</code></h2>
+            <p><a href="#">Web site: www.iqusworld.com</a> <br>
+                <a href="#">Facebook: Facebook.com/iqusworld</a> <br>
+                <a href="#">Youtube: www.youtube.com/iqusworld</a>
+            </p>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

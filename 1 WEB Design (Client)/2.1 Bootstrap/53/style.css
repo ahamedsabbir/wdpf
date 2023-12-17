@@ -1,0 +1,7 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{ display: flex; list-style-type: none; gap: 1em;}
+footer li{ border: 1px solid gray;}

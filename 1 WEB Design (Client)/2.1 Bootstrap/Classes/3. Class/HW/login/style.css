@@ -1,0 +1,12 @@
+.wrapper{
+    max-width:800px;
+    margin: 0 auto;
+    background-image: url(pexels-photo-255379.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width:300px;
+    display: block;
+    margin: 0 auto;
+}
