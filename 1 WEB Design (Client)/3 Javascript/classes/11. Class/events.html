@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            margin-bottom: 5px;
+        }
+        .result{
+            color: aqua;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body ononline="callFunc('pc in online')" onoffline="callFunc('pc in offline')">
+    <ul>
+        <li><input onkeyup="callFunc(this)" /></li>
+        <li>onkeydown</li>
+        <li>onkeypress</li>
+        <li><input type="text" onblur="callFunc(this)" onfocus=""> onblur: focus cole zaoyai holo on blur.</li>
+        <li><button onclick="callFunc('hello komn acho.')">onclick</button></li>
+        <li><button onclick="print()">print</button></li>
+        <li><input type="range" min="1" max="100" step="1" onmousemove="callFunc(this)"></li>
+        <li><span id="result">0</span></li>
+    </ul>
+    <script>
+        function callFunc(m){
+            if(m.value){
+                console.log(m.value);
+                document.getElementById("result").innerHTML = m.value;
+            }else{
+                console.log(m);
+                document.getElementById("result").innerHTML = m;
+            }
+        }
+    </script>
+</body>
+</html>

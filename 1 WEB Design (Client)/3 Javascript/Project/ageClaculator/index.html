@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="getDate" onchange="ageCal()" />
+    <script>
+        function ageCal(){
+            let getD = document.getElementById("getDate").value;
+            let date = new Date();
+            let nYear = date.getFullYear();
+            let nMonth = date.getMonth();
+            let nDay = date.getDate()
+            let getArray = getD.split("-");
+            let oYear = getArray[0];
+            let oMonth = getArray[1];
+            let oDay = parseInt(getArray[2]);
+            let rYear = eval(nYear-oYear);
+            let rMonth = eval(nMonth-oMonth);
+            let rDay = eval(nDay-oDay);
+            console.log(`${rYear}:${rMonth}:${rDay}`);
+        }
+    </script>
+</body>
+</html>

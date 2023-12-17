@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="eventsContainer"></div>
+    <script>
+        var month = 3;
+        var day = 8;
+        var url = 'https://byabbe.se/on-this-day/'+month+'/'+day+'/events.json';
+        function show(data){
+            // let ev = data.events;
+            let html = `<h1>${data.date}</h1><hr>`;
+        data.events.forEach(ev => {
+/*             if(ev.year === "1971"){
+            html += `<div><h3>${ev.year}</h3><p>${ev.description}</p></div>`;
+            } */
+            html += `<div><h3>${ev.year}</h3><p>${ev.description}</p></div>`;
+        });
+        document.getElementById("eventsContainer").innerHTML = html;
+        }
+//ajax request
+        fetch(url)
+.then(res => res.json())
+.then(json => show(json))
+    </script>
+</body>
+</html>

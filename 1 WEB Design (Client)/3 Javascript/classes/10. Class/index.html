@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form">
+        <input type="name" id="getDate" name="date" onchange="makeArray(this)">
+        <input type="date" id="getDate" name="date" onchange="makeArray(this)">
+        <input type="time" id="getDate" name="date" onchange="makeArray(this)">
+    </form>
+    <div>
+        <p>year: <span id="y"></span></p>
+        <p>month: <span id="m"></span></p>
+        <p>date: <span id="d"></span></p>
+    </div>
+    <script>
+        function makeArray(d){
+            let getDate = d.value;
+            if(){
+
+            }if (condition) {
+                
+            } else {
+                
+            }
+            let getArray = getDate.split("-");
+            let bsor = parseInt(getArray[0]);
+            let mas = parseInt(getArray[1]);
+            let din = parseInt(getArray[2]);
+            document.getElementById("y").innerHTML = bsor;
+            document.getElementById("m").innerHTML = mas;
+            document.getElementById("d").innerHTML = din;
+            console.log(getArray);
+        }
+    </script>
+</body>
+</html>

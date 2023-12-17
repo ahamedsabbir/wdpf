@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulus</title>
+    <style>
+        h3{
+            display: inline;
+            font-size: 45px;
+            font-weight: 700;
+        }
+        span{
+            font-size: 45px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2 style="color: red; background-color: azure;">* Modulus করলে যে সংখ্যা দিয়া করা হয় ভেলু তার উপর কখন ও যায় না।</h2> -->
+    <div id="submitData" style="width: 400px; margin: 0 auto;">
+        <h3 id="houre">0</h3><span> : </span><h3 id="minute">0</h3><span> : </span><h3 id="second">0</h3><span> : </span><h3 id="milesecond">0</h3>
+    </div>
+    <script>
+        var w = 0;
+        var x = 0;
+        var y = 0;
+        var z = 0;
+        function numberCircle(){
+            let ms = ++w % 61;
+            document.getElementById("milesecond").innerHTML = ms;
+            if(ms == 60){
+                let s = ++x % 61;
+                document.getElementById("second").innerHTML = s;
+                if(s == 60){
+                    let m = ++y % 61;
+                    document.getElementById("minute").innerHTML = m;
+                    if(m == 60){
+                        let h = ++z % 61;
+                        document.getElementById("houre").innerHTML = h;
+                    }
+                }
+            }
+        }
+        setInterval(numberCircle, 100);
+    </script>
+</body>
+</html>

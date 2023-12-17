@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.5.1-web/css/fontawesome.css">
+</head>
+
+<body onload="autoLoad()">
+    <div class="container" style="width: 50%;">
+        <textarea name="" id="inputData" onfocus="showKeyboard()"></textarea>
+    </div>
+    <div class="container" id="keyboardDiv" style="visibility: hidden;">
+        <table class="keyboard">
+            <tr>
+                <td class="setNav" onclick="inputFunc('&#2535;', '&#2535;')">
+                    <p id=""><i class="fa-solid fa-gear"></i></p>
+                </td>
+                <td class="setNav" onclick="inputFunc('&#2536;', '&#2536;')">
+                    <p id="two"><i class="fa-solid fa-globe"></i></p>
+                </td>
+                <td class="setNav" onclick="inputFunc('&#2536;', '&#2536;')">
+                    <p id="two"><i class="fa-solid fa-copy"></i></p>
+                </td>
+                <td class="setNav" onclick="inputFunc('&#2536;', '&#2536;')">
+                    <p id="two"><i class="fa-solid fa-paste"></i></p>
+                </td>
+                <td class="setNav" onclick="inputFunc('&#2536;', '&#2536;')">
+                    <p id="two"><i class="fa-solid fa-lock"></i></p>
+                </td>
+            </tr>
+        </table>
+        <table class="keyboard" id="numLock">
+            <tr>
+                <td class="key" onclick="inputFunc('&#2535;', '&#2535;')">
+                    <p id="one">&#2535;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2536;', '&#2536;')">
+                    <p id="two">&#2536;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2537;', '&#2537;')">
+                    <p id="three">&#2537;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2538;', '&#2538;')">
+                    <p id="four">&#2538;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2539;', '&#2539;')">
+                    <p id="five">&#2539;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2540;', '&#2540;')">
+                    <p id="six">&#2540;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2541;', '&#2541;')">
+                    <p id="seven">&#2541;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2542;', '&#2542;')">
+                    <p id="eight">&#2542;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2543;', '&#2543;')">
+                    <p id="nine">&#2543;</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2534;', '&#2534;')">
+                    <p id="zero">&#2534;</p>
+                </td>
+            </tr>
+        </table>
+        <table class="keyboard">
+            <tr>
+                <td class="key" onclick="inputFunc('&#2453;', '&#2433;')">
+                    <p id="q"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2530;', '?')">
+                    <p id="w"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2503;', '&#2447;')">
+                    <p id="e"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2480;', '&#2524;')">
+                    <p id="r"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2468;', '&#2463;')">
+                    <p id="t"></p>
+                </td>
+                <td class="key" onclick="inputFunc('?', '&#2527;')">
+                    <p id="y"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2441;', '&#2442;')">
+                    <p id="u"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2439;', '&#2440;')">
+                    <p id="i"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2451;', '&#2452;')">
+                    <p id="o"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2474;', '&#2474;')">
+                    <p id="p"></p>
+                </td>
+            </tr>
+        </table>
+        <table class="keyboard">
+            <tr>
+                <td class="key" onclick="inputFunc('&#2437;', '&#2438;')">
+                    <p id="a"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2488;', '&#2486;')">
+                    <p id="s"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2465;', '&#2466;')">
+                    <p id="d"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2475;', '&#2475;')">
+                    <p id="f"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2455;', '&#2456;')">
+                    <p id="g"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2489;', '&#2435;')">
+                    <p id="h"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2460;', '&#2461;')">
+                    <p id="j"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2453;', '&#2453;')">
+                    <p id="k"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2482;', '&#2482;')">
+                    <p id="l"></p>
+                </td>
+            </tr>
+        </table>
+        <table class="keyboard">
+            <tr>
+                <td class="key" onclick="changeFunc()" ondblclick="fixedFunc()">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2479;', '&#2479;')">
+                    <p id="z"></p>
+                </td>
+                <td class="key" onclick="inputFunc('?', '?')">
+                    <p id="x"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2458;', '&#2459;')">
+                    <p id="c"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2477;', '&#2477;')">
+                    <p id="v"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2476;', '&#2476;')">
+                    <p id="b"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2472;', '&#2467;')">
+                    <p id="n"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2478;', '&#2478;')">
+                    <p id="m"></p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2535;')">
+                    <p><i class="fa-solid fa-left-long"></i></p>
+                </td>
+            </tr>
+        </table>
+        <table class="keyboard">
+            <tr>
+                <td class="key" onclick="inputFunc('&#2535;')">
+                    <p>/</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2551;', '&#2551;')">
+                    <p>.</p>
+                </td>
+                <td colspan="4" class="space" onclick="inputFunc('&nbsp;', '&nbsp;')">
+                    <p>Space</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2535;')">
+                    <p>@</p>
+                </td>
+                <td class="key" onclick="inputFunc('&#2535;')">
+                    <p>GO</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        let capital = false;
+        let alphabet = null;
+        let banglaLang = [a = "&#2437;"];
+        console.log(banglaLang[a]);
+        let fixed = false;
+
+        function showKeyboard(){
+            document.getElementById('keyboardDiv').style.visibility = "visible";
+        }
+        function changeFunc() {
+            if (capital == false) {
+                capital = true;
+                autoLoad()
+            } else {
+                capital = false;
+                autoLoad()
+            }
+        }
+        function fixedFunc() {
+            capital = true;
+            fixed = true;
+            //autoLoad()
+        }
+        function inputFunc(firstData, secondData) {
+            if (capital == true) {
+                alphabet = secondData;
+                document.getElementById("inputData").value += secondData;
+            } else {
+                alphabet = firstData;
+                document.getElementById("inputData").value += firstData;
+            }
+            fixed == false ? autoLoad() : "";
+        }
+        function autoLoad() {
+            if (capital == true) {
+                document.getElementById("a").innerHTML = "A";
+                document.getElementById("b").innerHTML = "B";
+                document.getElementById("c").innerHTML = "C";
+                document.getElementById("d").innerHTML = "D";
+                document.getElementById("e").innerHTML = "E";
+                document.getElementById("f").innerHTML = "F";
+                document.getElementById("g").innerHTML = "G";
+                document.getElementById("h").innerHTML = "H";
+                document.getElementById("i").innerHTML = "I";
+                document.getElementById("j").innerHTML = "J";
+                document.getElementById("k").innerHTML = "K";
+                document.getElementById("l").innerHTML = "L";
+                document.getElementById("m").innerHTML = "M";
+                document.getElementById("n").innerHTML = "N";
+                document.getElementById("o").innerHTML = "O";
+                document.getElementById("p").innerHTML = "P";
+                document.getElementById("q").innerHTML = "Q";
+                document.getElementById("r").innerHTML = "R";
+                document.getElementById("s").innerHTML = "S";
+                document.getElementById("t").innerHTML = "T";
+                document.getElementById("u").innerHTML = "U";
+                document.getElementById("v").innerHTML = "V";
+                document.getElementById("w").innerHTML = "W";
+                document.getElementById("x").innerHTML = "X";
+                document.getElementById("y").innerHTML = "Y";
+                document.getElementById("z").innerHTML = "Z";
+            } else {
+                document.getElementById("a").innerHTML = "a";
+                document.getElementById("b").innerHTML = "b";
+                document.getElementById("c").innerHTML = "c";
+                document.getElementById("d").innerHTML = "d";
+                document.getElementById("e").innerHTML = "e";
+                document.getElementById("f").innerHTML = "f";
+                document.getElementById("g").innerHTML = "g";
+                document.getElementById("h").innerHTML = "h";
+                document.getElementById("i").innerHTML = "i";
+                document.getElementById("j").innerHTML = "j";
+                document.getElementById("k").innerHTML = "k";
+                document.getElementById("l").innerHTML = "l";
+                document.getElementById("m").innerHTML = "m";
+                document.getElementById("n").innerHTML = "n";
+                document.getElementById("o").innerHTML = "o";
+                document.getElementById("p").innerHTML = "p";
+                document.getElementById("q").innerHTML = "q";
+                document.getElementById("r").innerHTML = "r";
+                document.getElementById("s").innerHTML = "s";
+                document.getElementById("t").innerHTML = "t";
+                document.getElementById("u").innerHTML = "u";
+                document.getElementById("v").innerHTML = "v";
+                document.getElementById("w").innerHTML = "w";
+                document.getElementById("x").innerHTML = "x";
+                document.getElementById("y").innerHTML = "y";
+                document.getElementById("z").innerHTML = "z";
+            }
+        };
+    </script>
+</body>
+
+</html>

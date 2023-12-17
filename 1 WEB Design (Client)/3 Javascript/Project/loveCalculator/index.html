@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 20px;
+        }
+
+        .mainDiv {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .itemDiv {
+            margin-bottom: 5px;
+        }
+
+        #submitClaculate {
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <form name="claculator" action="javascript:void(0)">
+            <div class="itemDiv">
+                <label for="firstName">Name: </label>
+                <input type="text" name="firstName" id="firstName" />
+            </div>
+            <div class="itemDiv">
+                <label for="secondName">Name: </label>
+                <input type="text" name="secondName" id="secondName" />
+            </div>
+            <div class="itemDiv">
+                <button id="submitClaculate" onclick="getResult()">Claculate</button>
+            </div>
+            <div class="itemDiv">
+                <p><b id="setFirstName"></b>+<b id="setSecondName"></b>=<b id="setResult"></b></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function getResult() {
+            f = document.claculator.firstName.value;
+            document.getElementById("setFirstName").innerHTML = f;
+            l = document.claculator.secondName.value;
+            document.getElementById("setSecondName").innerHTML = l;
+            c = parseInt(Math.random()*100);
+            r = "";
+            if(c >= 80){
+                r = "good";
+            }else if(c >= 60){
+                r = "not bad";
+            }else{
+                r = "not good";
+            }
+            document.getElementById("setResult").innerHTML = r;
+            console.log(f);
+        }
+    </script>
+</body>
+
+</html>
