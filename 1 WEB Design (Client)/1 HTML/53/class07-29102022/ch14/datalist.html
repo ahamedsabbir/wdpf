@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="a.php">
+    <input list="districts" type="text" name="dist">
+    <datalist id="districts">
+        <option value="Barguna"></option>
+        <option value="Barisal"></option>
+        <option value="Bhola"></option>
+        <option value="Jhalokati"></option>
+        <option value="Patuakhali"></option>
+        <option value="Pirojpur"></option>
+        <option value="Bandarban"></option>
+        <option value="Brahmanbaria"></option>
+        <option value="Chandpur"></option>
+        <option value="Chittagong"></option>
+        <option value="Comilla"></option>
+        <option value="Cox" s="" bazar'=""></option>
+        <option value="Feni"></option>
+        <option value="Khagrachhari"></option>
+        <option value="Lakshmipur"></option>
+        <option value="Noakhali"></option>
+        <option value="Rangamati"></option>
+        <option value="Dhaka"></option>
+        <option value="Faridpur"></option>
+        <option value="Gazipur"></option>
+        <option value="Gopalganj"></option>
+        <option value="Kishoreganj"></option>
+        <option value="Madaripur"></option>
+        <option value="Manikganj"></option>
+        <option value="Munshiganj"></option>
+        <option value="Narayanganj"></option>
+        <option value="Narsingdi"></option>
+        <option value="Rajbari"></option>
+        <option value="Shariatpur"></option>
+        <option value="Tangail"></option>
+        <option value="Bagerhat"></option>
+        <option value="Chuadanga"></option>
+        <option value="Jessore"></option>
+        <option value="Jhenaidah"></option>
+        <option value="Khulna"></option>
+        <option value="Kushtia"></option>
+        <option value="Magura"></option>
+        <option value="Meherpur"></option>
+        <option value="Narail"></option>
+        <option value="Satkhira"></option>
+        <option value="Jamalpur"></option>
+        <option value="Mymensingh"></option>
+        <option value="Netrakona"></option>
+        <option value="Sherpur"></option>
+        <option value="Bogra"></option>
+        <option value="Chapainawabganj"></option>
+        <option value="Joypurhat"></option>
+        <option value="Naogaon"></option>
+        <option value="Natore"></option>
+        <option value="Pabna"></option>
+        <option value="Rajshahi"></option>
+        <option value="Sirajganj"></option>
+        <option value="Dinajpur"></option>
+        <option value="Gaibandha"></option>
+        <option value="Kurigram"></option>
+        <option value="Lalmonirhat"></option>
+        <option value="Nilphamari"></option>
+        <option value="Panchagarh"></option>
+        <option value="Rangpur"></option>
+        <option value="Thakurgaon"></option>
+        <option value="Habiganj"></option>
+        <option value="Moulvibazar"></option>
+        <option value="Sunamganj"></option>
+        <option value="Sylhet"></option>
+    </datalist>
+    <br>
+    <input name="value1" id="value1" type="number" onchange="calc()" value="0"> x
+<input name="value2" id="value2" type="number" onchange="calc()" value="0"> =
+<output name="total" id="total" for="value1 value2"></output>
+<hr>
+<input type="submit" value="GO">
+<!-- a.php?dist=Dhaka -->
+</form>
+<script>
+function calc(){
+    document.getElementById("total").innerHTML = parseInt( document.getElementById("value1").value ) * parseInt( document.getElementById("value2").value);
+}
+</script>
+</body>
+
+</html>

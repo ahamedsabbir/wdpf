@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#pic {
+  width:500px;
+  height:332px;
+  position:relative; /*set div position property to relative */
+}
+#pic a {
+  position:absolute;
+  width:270px;
+  height:170px;  
+}
+#pic .grape a {
+  top:70px;
+  left:90px;
+}
+#pic a:hover {
+  border: 1px solid #fff
+}
+#pic ul {
+  margin:0;
+  border:0;
+  list-style:none;
+  font-size:0;
+}
+</style>
+</head>
+<body>
+    <div id="pic">
+        <img src="https://farm5.staticflickr.com/4145/4844473880_63932480eb.jpg" width="500" height="332" alt="Fruit Bowl">
+        <ul>
+            <li class="grape">
+                <a href="https://en.wikipedia.org/wiki/Grape" title="Grapes">Grapes</a>
+            </li>
+        </ul>
+      </div>
+</body>
+</html>

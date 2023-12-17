@@ -1,0 +1,25 @@
+<script>
+    // Define the path to the local JSON file
+const jsonFilePath = 'data.json';
+
+// Use the Fetch API to fetch the JSON data
+fetch(jsonFilePath)
+  .then(response => {
+    // Check if the response status is OK (200)
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    // Parse the JSON response
+    return response.json();
+  })
+  .then(data => {
+    // Handle the JSON data
+    console.log('Name:', data.name);
+    console.log('Email:', data.email);
+    console.log('Age:', data.age);
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the fetch
+    console.error('Fetch error:', error);
+  });
+</script>

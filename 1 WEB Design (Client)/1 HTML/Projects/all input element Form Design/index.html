@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>all form element is here.</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h1 class="heading">Registion Form</h1>
+        <hr>
+        <form action="" method="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personel Information</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="text" name="" id="firstName" tabindex="1" pattern="[A-Za-z]{3}"
+                            placeholder="israt ahamed" autofocus required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="text" name="" id="lastName" tabindex="2" placeholder="sabbir" required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="emailAddress">Email Address</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="email" name="" id="emailAddress" tabindex="3" placeholder="onikitbd@gmail.com"
+                            required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="protfolioLink">Protfolio Link</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="url" name="" id="protfolioLink" tabindex="3" placeholder="www.onikitbd.com"
+                            required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="tel" name="" id="phoneNumber" placeholder="01775567493" tabindex="4" required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="birthDate">Birth Date</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="date" name="" id="birthDate" tabindex="7" required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="nationality">Nationality</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="text" name="" id="nationality" value="bangladeshi" placeholder="bangladeshi" disabled>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <span>Gender</span>
+                    </div>
+                    <div class="elementItem">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="education">Education</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="text" name="" id="education" list="educationList">
+                        <datalist id="educationList">
+                            <select name="" id="">
+                                <option value="PSD">PSD</option>
+                                <option value="MBA">MBA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="HSC">HSC</option>
+                                <option value="SSC">SSC</option>
+                            </select>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <span>Subject</span>
+                    </div>
+                    <div class="elementItem">
+                        <input type="checkbox" name="subject" id="html">
+                        <label for="html">html</label>
+                        <input type="checkbox" name="subject" id="css">
+                        <label for="css">css</label>
+                        <input type="checkbox" name="subject" id="bootstrap">
+                        <label for="bootstrap">bootstrap</label>
+                        <input type="checkbox" name="subject" id="jquery">
+                        <label for="jquery">jquery</label>
+                        <input type="checkbox" name="subject" id="react">
+                        <label for="react">react</label>
+                        <input type="checkbox" name="subject" id="valujs">
+                        <label for="valujs">valujs</label>
+                        <input type="checkbox" name="subject" id="laravel">
+                        <label for="laravel">laravel</label>
+                        <input type="checkbox" name="subject" id="wordpress">
+                        <label for="wordpress">wordpress</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Profile Pic</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="profilePic">Profile Pic</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="file" name="" id="profilePic" tabindex="5">
+                        <img id="profilePicResult" src="" alt="no image upload">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>National Id Card Photo</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="profilePic">Profile Pic</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="file" name="" id="profilePic" tabindex="5" multiple>
+                        <img id="profilePicResult" src="" alt="no image upload">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Password</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="enterPassword">Enter Password</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="enterPassword" tabindex="5" pattern="[A-Za-z9-0]{8-10}"
+                            required>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="reEnterPassword">Re-Enter Password</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="reEnterPassword" tabindex="6" pattern="[A-Za-z9-0]{8-10}"
+                            required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="districtName">District Name</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="districtName" tabindex="5">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="enterPassword">Division Name</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="enterPassword" tabindex="5" list="divisionList">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="enterPassword">Area Name</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="enterPassword" tabindex="5">
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="elementLevel">
+                        <label for="reEnterPassword">Post Code</label>
+                    </div>
+                    <div class="elementItem">
+                        <input type="password" name="" id="reEnterPassword" tabindex="6">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personel Information</legend>
+                    <div class="element">
+                        <div class="elementLevel">
+                            <label for="themeColor">Theme Color</label>
+                        </div>
+                        <div class="elementItem">
+                            <input type="color" name="" id="themeColor" tabindex="7" required>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="elementLevel">
+                            <label for="comment">Comment</label>
+                        </div>
+                        <div class="elementItem">
+                            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="elementLevel">
+                            <label for="workingHours">Working Hours</label>
+                        </div>
+                        <div class="elementItem">
+                            <input type="range" name="workingHours" id="workingHours" min="1" max="24">
+                        </div>
+                    </div>
+            </fieldset>
+            <div class="element">
+                <div class="elementLevel">
+                    <span for="comment">&nbsp;</span>
+                </div>
+                <div class="elementItem">
+                    <input type="image" src="assets/img/submit.png" alt="">
+                </div>
+            </div>
+            <div class="element">
+                <div class="elementLevel">
+                    <span for="comment">&nbsp;</span>
+                </div>
+                <div class="elementItem">
+                    <button name="submit" type="submit" value="submit">Submit</button>
+                    <button name="reset" type="reset" value="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

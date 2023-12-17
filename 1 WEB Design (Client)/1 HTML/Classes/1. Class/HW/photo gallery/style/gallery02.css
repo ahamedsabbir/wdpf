@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-gap: 2em;
+  padding: 2em;
+  pointer-events: none;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: .25em;
+    transition: 250ms 50ms;
+    pointer-events: auto;
+  }
+  
+  &:hover img:not(:hover) {
+    filter: saturate(.2) opacity(.5);
+  }
+}

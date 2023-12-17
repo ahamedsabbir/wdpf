@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure {
+            width: 300px;
+            display: inline-block;
+        }
+
+        figure img {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body onload="r()">
+    <h1 style="background-color:blanchedalmond ; color: red;">Text in html5</h1>
+    <figure>
+        <img src="images/ng9VbqaKv6c.jpg" alt="">
+        <figcaption>Caption 1</figcaption>
+    </figure>
+    <figure>
+        <img src="images/ppznq8RvxqI.jpg" alt="">
+        <figcaption>Caption 2</figcaption>
+    </figure>
+    <figure>
+        <img src="images/rmB2WbltLRc.jpg" alt="">
+        <figcaption>Caption 3</figcaption>
+    </figure>
+    <img src="images/ppznq8RvxqI.jpg" alt="">
+    <h3> <mark>Mark</mark> tag</h3>
+    <h3>meter</h3>
+    <p>Miles walked during half-marathon:
+        <meter min="0" max="13.1" value="12" title="Miles">2.5</meter>
+    </p>
+    <p>
+        My phone battery status: <meter high="80" low="20" optimum="100" min="0" max="100" value="10" title="battery">10%</meter> 10%
+    </p>
+    <p>
+        My phone battery status: <meter high="80" low="20" optimum="100" min="0" max="100" value="50" title="battery">50%</meter> 50%
+    </p>
+    <p>
+        My phone battery status: <meter high="80" low="20" optimum="100" min="0" max="100" value="90" title="battery">90%</meter> 90%
+    </p>
+    <p>Your position in class, total 100 students</p>
+    <p>
+        My position: <meter high="70" low="10" optimum="1" min="1" max="100" value="71"></meter>
+    </p>
+    <h3>Progress</h3>
+    <label for="file">Downloading progress:</label>
+    <progress id="file2" value="32" max="100"> 32% </progress>
+    <progress id="file" value="32" max="100"> 32% </progress>
+
+<h3>WBR</h3> 
+<p> cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoo<wbr>cacadoodoodoo<wbr>cacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoocacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo</p>
+<p> cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo  </p>
+<p> cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo  </p>
+<p> cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo cacadoodoodoocacadoodoodoocacadoodoodoo  </p>
+    <script>
+    var r =  function (){
+    // alert(typeof document.getElementById("file").value)
+    if(document.getElementById("file").value < 100 )
+    document.getElementById("file").value += 1;
+    else{
+        document.getElementById("file").value = 0
+    }
+}
+setInterval(() => {
+    r();
+}, 500);
+
+    </script>
+</body>
+
+</html>

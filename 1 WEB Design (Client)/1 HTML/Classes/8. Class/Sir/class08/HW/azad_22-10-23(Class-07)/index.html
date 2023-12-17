@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form Using Table In HTML</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form Using Table In HTML</h1>
+        <div class="form-area">
+            <form action="mailto:abc@gmail.com" name="student detaila" autocomplete="on" enctype="multipart/form-data">
+                <div class="form_group">
+                    <label for="fName" class="myLabel">First Name : </label>
+                    <input type="text" class="inputData" autofocus="on" name="fName" id="fName" placeholder="Enter First Name" maxlength="50"><br>
+                </div>
+                <div class="form_group">
+                    <label for="lName" class="myLabel">Last Name : </label>
+                    <input type="text" class="inputData" name="lName" id="lName" placeholder="Enter Last Name" maxlength="50"><br>
+                </div>
+                <div class="form_group">
+                    <label for="email" class="myLabel">Email ID : </label>
+                    <input type="email" class="inputData" name="email" id="email" placeholder="Enter Email Address"><br>
+                </div>
+                <div class="form_group">
+                    <label for="contact" class="myLabel">Mobile Number : </label>
+                    <input type="tel" class="inputData" name="contact" id="contact" placeholder="7842xxxxxx" min="10" maxlength="11"><br>
+                </div>
+                <div class="form_group">
+                    <label for="gender" class="myLabel">Gender : </label>
+                    <input type="radio" name="gender" class="gender" id="gender">Male
+                    <input type="radio" name="gender" class="gender" id="gender" >Female
+                </div>
+                <div class="form_group">
+                    <label for="dob" class="myLabel">Date Of Birth (DOB) : </label>
+                    <input type="date" class="inputData" name="dob" id="dob">
+                </div>
+                <div class="form_group">
+                    <label for="address" class="myLabel">Address : </label>
+                    <textarea name="address" id="address" cols="38" rows="10"></textarea> 
+                </div>
+                <div class="form_group">
+                    <label for="city" class="myLabel">City : </label>
+                    <input type="text" class="inputData" name="city" id="city" maxlength="50">
+                </div>
+                <div class="form_group">
+                    <label for="pinCode" class="myLabel">Pin Code : </label>
+                    <input type="password" class="inputData" name="pinCode" id="pinCode" placeholder="560068" minlength="4" maxlength="6">
+                </div>
+                <div class="form_group">
+                    <label for="state" class="myLabel">State : </label>
+                    <input type="text" class="inputData" name="state" id="state" maxlength="50">
+                </div>
+                <div class="form_group">
+                    <label for="conntry" class="myLabel">Country : </label>
+                    <input type="text" class="inputData" value="india" name="conntry" id="conntry">
+                </div>
+                <div class="form_group div">
+                    <label for="hobby" class="myLabel">Hobbies : </label>
+                    <div class="flex">
+                        <input type="checkbox" class="checkbox" name="hobby" id="hobby">Drawing
+                        <input type="checkbox" class="checkbox" name="hobby" id="hobby">Singing
+                        <input type="checkbox" class="checkbox" name="hobby" id="hobby">Dancing
+                        <input type="checkbox" class="checkbox" name="hobby" id="hobby">Sketching
+                        <input type="checkbox" class="checkbox Others" name="hobby" id="hobby" maxlength="50">Others
+                        <input type="text" class="inputData" name="hobby" id="hobby" placeholder="Ex-Teaching">
+                    </div>
+                </div>
+                <div class="form_group div">
+                    <label for="qualification" class="myLabel">Qualification : </label>
+                    <div class="flex">
+                        <div>
+                            <input type="checkbox" class="checkbox" name="qualification" id="qualification">High School (10th)
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" name="qualification" id="qualification">Higher School (12th)
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" name="qualification" id="qualification">Graduation (Bachelors)
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" name="qualification" id="qualification">Post Graduation (Masters) 
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox Others" name="hobby" id="hobby" maxlength="50">Phd
+                        </div>
+                    </div>
+                </div>
+                <div class="form_group div">
+                    <label for="qualification" class="myLabel">Courses Applied For : </label>
+                    <div class="flex">
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">BCA (Bachelor Of Computer Applications)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">B.Com (Bachelor Of Commerce)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">B.Sc (Bachelor Of Science)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">B.A (Bachelor Of Arts)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">MCA (Master Of Computer Application)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">M.Com (Master Of Commerce)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualification" id="qualification">M.Sc (Master Of Science)
+                        </div>
+                        <div>
+                            <input type="radio" class="checkbox" name="qualificationy" id="qualification">MA (Master Of Arts)
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset" name="" id="cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

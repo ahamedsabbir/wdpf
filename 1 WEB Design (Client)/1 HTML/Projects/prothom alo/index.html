@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="container headerDiv">
+        <div class="headerLeft">
+            <div class="headerLeftTop">
+                <div class="headerLeftTopLeft">
+                    <i class="fa-solid fa-bars" style="font-size: 24px;" onclick="sideNavOpen()"></i>
+                </div>
+                <div class="headerLeftTopRight">
+                    <i class="fa-solid fa-magnifying-glass" id="searchBoxButton" style="font-size: 24px;" onclick="searchOpen()"></i>
+                    <span class="searchBox" id="searchBox"><input type="text" placeholder="যা খুজতে চান"><button>Go</button></span>
+                </div>
+            </div>
+            <div class="headerLeftBottom">
+                <p>বৃহস্পতিবার, ০২ নভেম্বর ২০২৩</p>
+            </div>
+        </div>
+        <div class="headerCenter">
+            <img src="assets/img/723b7b56de150a31a26c158fde2a8b84-palo-logo.jpg">
+        </div>
+        <div class="headerRight">
+            <div class="headerRightTop">
+                <div class="headerRightTopRight">
+                    <button>login</button>
+                </div>
+                <div class="headerRightTopLeft">
+                    <i class="fa-solid fa-bell" onclick="notificationOpen()"></i>
+                </div>
+            </div>
+            <div class="headerRightBottom clear">
+                <p><a href="">English</a> Edition</p>
+            </div>
+        </div>
+    </header>
+    <section class="sideNav" id="sideNav">
+        <div class="sideNavButton">
+            <i class="fa-solid fa-xmark" onclick="sideNavClose()"></i>
+        </div>
+        <div class="sideNavList">
+            <ul>
+                <li>সর্বশেষ</li>
+                <li>বিশেষ সংবাদ</li>
+                <li>রাজনীতি</li>
+                <li>বাংলাদেশ</li>
+                <li>অপরাধ</li>
+                <li>বিশ্ব</li>
+                <li>বাণিজ্য</li>
+                <li>মতামত</li>
+                <li>খেলা</li>
+                <li>বিনোদন</li>
+                <li>চাকরি</li>
+                <li>জীবনযাপন</li>
+                <li>সর্বশেষ</li>
+                <li>বিশেষ সংবাদ</li>
+                <li>রাজনীতি</li>
+                <li>বাংলাদেশ</li>
+                <li>অপরাধ</li>
+                <li>বিশ্ব</li>
+                <li>বাণিজ্য</li>
+                <li>মতামত</li>
+                <li>খেলা</li>
+                <li>বিনোদন</li>
+                <li>চাকরি</li>
+                <li>জীবনযাপন</li>
+            </ul>
+        </div>
+    </section>
+    <nav class="mainManu">
+        <ul>
+            <li>সর্বশেষ</li>
+            <li>বিশেষ সংবাদ</li>
+            <li>রাজনীতি</li>
+            <li>বাংলাদেশ</li>
+            <li>অপরাধ</li>
+            <li>বিশ্ব</li>
+            <li>বাণিজ্য</li>
+            <li>মতামত</li>
+            <li>খেলা</li>
+            <li>বিনোদন</li>
+            <li>চাকরি</li>
+            <li>জীবনযাপন</li>
+        </ul>
+    </nav>
+    <div class="googleAdd">
+        <img src="assets/img/advertise-3000-785x150@2x.png" alt="">
+    </div>
+    <section class="postDiv clear">
+        <div class="postloop">
+            <h1>বাংলাদেশ</h1>
+            <ul>
+                <li>রাজধানী</li>
+                <li>জেলা</li>
+                <li>করোনাভাইরাস</li>
+                <li>অপরাধ</li>
+                <li>পরিবেশ</li>
+            </ul>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+            <div class="postcardStyle01">
+                <img src="assets/img/images.jfif" alt="">
+                <h3>বরগুনায় পণ্যবাহী ট্রাক ভাঙ চুরের পর অগ্নিসংযোগ</h3>
+                <p>হিলি স্থলবন্দরের আলু আমদানিকারকদের সঙ্গে কথা বলে জানা গেছে, প্রকারভেদে প্রতি মেট্রিক টন আলু আমদানিতে ১৩০</p>
+                <p>২৩ মিনিট আগে</p>
+            </div>
+        </div>
+        <aside class="releventPost">
+            <img src="assets/img/5339975753969232719.jpg" alt="">
+        </aside>
+    </section>
+    <footer class="container mainFooter">
+        <div class="socialDiv clear">
+            <div class="socialDivLeft">
+                <p>অনুসরণ করুন</p>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+            </div>
+            <div class="socialDivRight">
+                <p>মোবাইল অ্যাপস ডাউনলোড করুন</p>
+                <ul>
+                    <li><img src="assets/img/Capture.PNG" alt=""></li>
+                    <li><img src="assets/img/Capture.PNG" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerMenu clear">
+            <ul>
+                <li>প্রথম আলো</li>
+                <li>বিজ্ঞাপন</li>
+                <li>সার্কুলেশন</li>
+                <li>শর্তাবলি ও নীতিমালা</li>
+                <li>গোপনীয়তা নীতি</li>
+                <li>যোগাযোগ</li>
+            </ul>
+        </div>
+        <div class="copyRight">
+            <p>স্বত্ব © ২০২৩ প্রথম আলো সম্পাদক ও প্রকাশক: মতিউর রহমান</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

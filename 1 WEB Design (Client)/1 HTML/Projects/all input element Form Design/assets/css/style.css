@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.mainDiv {
+    width: 80%;
+    margin: 0 auto;
+    background-color: azure;
+    box-shadow: 5px 5px 5px red;
+}
+
+.heading {
+    text-align: center;
+}
+
+hr {
+    background-color: azure;
+}
+
+.element {
+    padding: 5px 20px;
+}
+
+.elementLevel {
+    width: 20%;
+    float: left;
+}
+
+.elementItem {}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+input[type="date"] {
+    padding: 5px 1px;
+    width: 400px;
+}
+
+input[type="color"] {
+    padding: 5px;
+    width: 100px;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 20px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    font-weight: 900;
+    padding: 5px 1px;
+    width: 150px;
+}
+input[type="image"]{
+    width: 200px;
+}
+
+#profilePicResult {
+    width: 100px;
+}

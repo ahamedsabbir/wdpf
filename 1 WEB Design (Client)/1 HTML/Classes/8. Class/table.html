@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tableClass{
+            border:1px solid red; 
+            width: 100%;
+        }
+        th, td{
+            border:1px solid red;
+        }
+    </style>
+    <noscript>please on script</noscript>
+</head>
+
+<body>
+    <div style="width:80%; margin:auto;">
+        <h1 style="text-align: center;">table>tr*5>td*5{text}</h1>
+        <table class="tableClass">
+            <caption><h2>Stuents Information</h2></caption>
+            <colgroup>
+                <col width="10%">
+                <col style="border: 1px solid green;">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Round</th>
+                <th colspan="2">Marks</th>
+                <!-- <th>Marks</th> -->
+            </tr>
+            <tr>
+                <th>MCQ</th>
+                <th>DESC</th>
+            </tr>
+            <tr>
+                <td>1231234</td>
+                <td>Israt Ahamed Sabbir</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

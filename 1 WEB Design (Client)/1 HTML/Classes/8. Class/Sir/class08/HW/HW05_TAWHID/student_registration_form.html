@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            vertical-align: text-top;
+        }
+        .mylabel {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <style>
+        .myinput {
+            width: 60%;
+        }
+    </style>
+    <style>
+        #formbody{
+           max-width: 800px;
+           max-height: 100%;
+           background-color: aquamarine;
+           margin: auto;
+           padding: 2%;
+           border: 5px outset salmon;
+        }
+    </style>
+</head>
+<body >
+    <div id="formbody">
+   <u> <h1 style="text-align: center; color: blueviolet;" >Student Registration Form Using HTML</h1> </u>
+   <br>
+   <form style="background-color: aquamarine; " action="">
+<label class="mylabel" for="a">First Name:</label>
+<input class="myinput" type="text" placeholder="first name" maxlength="50" id="a"> (max 50 characters allowed)
+<br>
+<label class="mylabel" for="b">Last Name:</label>
+<input class="myinput" type="text" placeholder="last name" maxlength="50" id="b"> (max 50 characters allowed)
+<br>
+<label class="mylabel" for="c">Email ID: </label>
+<input class="myinput" type="email" name="EmailID" maxlength="100" placeholder="jhfuhkj@gmail" id="c"> <br>
+<label class="mylabel" for="d">Mobile Number</label>
+<input class="myinput" type="text" name="MobileNumber" maxlength="11" placeholder="017*******" id="d"> (11 digit allowed) <br>
+<label class="mylabel" for="">Gender:</label>
+<label for="M">Male</label>
+<input type="radio" name="Male" id="M">
+<label for="F">Female</label>
+<input type="radio" name="Male" id="F" > <br>
+<label class="mylabel" for="">Date of Birth:</label>
+<input type="date" placeholder="day/month/year"> <br>
+<label class="mylabel" for="">Address:</label>
+<textarea name="address" id="" cols="50" rows="10"></textarea> <br>
+<label class="mylabel" for="">city:</label>
+<input class="myinput" type="text" placeholder="your city" maxlength="50"> (max 50 characters allowed) <br>
+<label class="mylabel" for="">Pin Code:</label>
+<input class="myinput" type="text" placeholder="your pin" maxlength="6"> (max 6 characters allowed) <br>
+<label class="mylabel" for="">Country:</label>
+<input class="myinput" type="text" placeholder="Bangladesh"> <br>
+<label class="mylabel" for="">Hobbies:</label>
+<input type="checkbox" name="HobbyTravelling" value="Travelling"> Travelling
+<input type="checkbox" name="HobbySinging" value="Singing"> Singing
+<input type="checkbox" name="HobbyDancing" value="Dancing"> Dancing
+<input type="checkbox" name="HobbySketching" value="Sketching"> Sketching
+<input type="checkbox" name="HobbyCocking" value="Cocking"> Cocking <br>
+<label class="mylabel" for=""></label>
+<input type="checkbox" name="Other" value="Other"> Other
+<input type="text" placeholder="ex teaching" maxlength="50"> (max 50 characters allowed) <br> <br>
+<label class="mylabel" for="">Qualifications:</label>
+<input type="checkbox"> SSC/Dakhil <br>
+<label class="mylabel" for=""></label>
+<input type="checkbox"> HSC/Alim <br>
+<label class="mylabel" for=""></label>
+<input type="checkbox"> Honours <br>
+<label class="mylabel" for=""></label>
+<input type="checkbox"> Masters <br> <br>
+<label class="mylabel" for="">Course Applied For:</label>
+<input type="radio" name="a" id="w">
+<label for="w">WDPF</label> 
+<br>
+<label class="mylabel" for=""></label>
+<input type="radio" name="a" id="c"> 
+<label class="mylabel" for="c">C#</label>
+<br>
+<label class="mylabel" for=""></label>
+<input type="radio" name="a" id="d"> 
+<label class="mylabel" for="d">DDD</label>
+<br>
+<label class="mylabel" for=""></label>
+<input type="radio" name="a" id="j"> 
+<label class="mylabel" for="j">Java</label>
+<br>
+<label class="mylabel" for=""></label>
+<input type="radio" name="a" id="n"> 
+<label class="mylabel" for="n">NT</label>
+<br>
+<label class="mylabel" for=""></label>
+<input type="radio" name="a" id="g">
+<label class="mylabel" for="g">GAVE</label>
+ <br>
+ <input style="width: 40%;" type="button" name="Reset" value="Reset">
+ <input style="width: 40%;" type="button" name="Submit" value="submit">
+   </form>
+</div>
+</body>
+</html>

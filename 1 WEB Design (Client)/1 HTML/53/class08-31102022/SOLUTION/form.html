@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            width: 200px;
+            display: inline-block;
+			margin:10px;
+			color: white;
+        }
+        h1{text-align: center;}
+		form{
+		width:900px; 
+		margin:0 auto;
+		background-color: #6a5acd;
+		}
+		label[for='hobbies']~label, label[for='course']~label , label[for='gender']~label {
+		display:inline;
+		}
+    </style>
+    
+</head>
+<body>
+    <h1>Student Regestration Form</h1>
+    <form action="">
+	<input type="date"/>
+    <div>
+        <label for="fname">FIRST NAME</label>
+            <input type="text" placeholder="First Name" max="30">
+    </div>
+    <div>
+        <label for="lname">LAST NAME</label>
+            <input type="text" placeholder="Last Name" max="30">
+    </div>
+    <div>
+        <label for="mail">EMAIL ID</label>
+            <input type="mail" placeholder="someone@gmail.com">
+    </div>
+    <div>
+        <label for="phone">MOBILE NUMBER</label>
+            <input type="number" placeholder="Your Number">
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender"> <label for="male"> Male</label>
+            <input type="radio" id="female" name="gender"><label for="female"> FeMale</label>
+    </div>
+    <div>
+        <label for="adress">Adress</label>
+            <textarea name="Your Address" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="country">Country</label>
+            <select name="" id="">
+                <option value="bd">Bangladesh</option>
+                <option value="in">India</option>
+                <option value="ne">Nepal</option>
+                <option value="bh">Bhutan</option>
+            </select>
+    </div>
+    <div>
+        <label for="hobbies">Hobbies</label> 
+        <label for="read">Drawing</label> <input type="checkbox">
+        <label for="read">Singing</label> <input type="checkbox">
+        <label for="read">Dancing</label> <input type="checkbox">
+        <label for="read">Sketching</label> <input type="checkbox">
+        <label for="read">Others</label> <input type="checkbox">
+
+            
+    </div>
+    
+    <div>
+	<label for="hobbies">Qualification</label>
+	<div id="tablecontainer" style="display:inline-block; width:500px;">
+	<table width="100%" border="1">
+        <tr>
+            <th>SI.NO. Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+        </tr>
+        <tr>
+            <td>1.SSC</td>
+            <td> <input type="text"/> </td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>2.HSC</td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>3.Graduation</td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>4.Masters</td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+        </tr>
+    </table>
+	</div>
+	
+	</div>
+    
+     <br>
+    <div>
+        <label for="course">COURSES APPLIED FOR</label>
+        <label for="">BCA</label> <input type="checkbox">
+        <label for="">B.Com</label> <input type="checkbox">
+        <label for="">B.Sc</label> <input type="checkbox">
+        <label for="">B.A.</label> <input type="checkbox">
+    </div> <br>
+    <div style="text-align:center">
+        <input type="submit" style="padding:10px">
+        <input type="reset" style="padding:10px">
+
+    </div>
+    
+
+    
+
+
+
+</form>
+</body>
+</html>

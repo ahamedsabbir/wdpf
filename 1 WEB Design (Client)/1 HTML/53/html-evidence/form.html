@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body{
+            background-color: #bbbbbb;
+            
+        }
+        form{
+            box-shadow: 5px 5px 10px #000;
+            background-color: #e1e1e1;
+            width: 50%;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        .border{
+            width: 50%;
+            height: 2px;
+            background-color: #000;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        .input-group{
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+        .gender-label{
+            display: inline;
+        }
+        input[type="text"],
+        input[type="password"],
+        textarea{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .textarea{
+            display: flex;
+            align-items: flex-start;
+        }
+        .btn-group{
+            margin-left: 150px;
+        }
+        .btn-group > input{
+            padding: 10px 45px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: .5s;
+            margin-left: 15px;
+        }
+        .btn-group > input:hover{
+            box-shadow: 5px 5px 10px #000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Registrations Form</h2>
+        <div class="border"></div>
+        <div class="input-group">
+            <label for="uname">User name:</label>
+            <input type="text" name="uname" id="uname" placeholder="Write user name" required>
+        </div>
+        <div class="input-group">
+            <label for="fname">Full name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Write full name" required>
+        </div>
+        <div class="input-group">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Write a password" required>
+        </div>
+        <div class="input-group">
+            <label for="rpass">Re-type Password:</label>
+            <input type="password" name="rpass" id="rpass" placeholder="Write confirm password" required>
+        </div>
+        <div class="input-group">
+            <label for="gender">Gender:</label>
+            <label for="male" class="gender-label">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="fmale" class="gender-label">Female</label>
+            <input type="radio" name="gender" id="fmale">
+        </div>
+        <div class="input-group">
+            <label for="lang">Language:</label>
+            <select name="lang" id="lang">
+                <option value="english">English</option>
+                <option value="bangla">Bangla</option>
+                <option value="arabic">Arabic</option>
+                <option value="japanese">japanese</option>
+            </select>
+        </div>
+        <div class="input-group textarea">
+            <label for="comment">Comment: </label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <div class="input-group btn-group">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

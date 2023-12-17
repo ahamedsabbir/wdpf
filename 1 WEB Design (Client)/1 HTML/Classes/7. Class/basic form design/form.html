@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .fullform {
+            width: 50%;
+            margin:  auto;
+            background-color: antiquewhite;
+            border: 1px solid gray;
+            box-shadow: 5px 5px 5px red;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .fullform>h1 {
+            text-align: center;
+        }
+
+        .allInput {
+            width: 100%;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .formLabel {
+            width: 20%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .formInput {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        input,
+        select {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullform">
+        <h1>Registion Form</h1>
+        <hr />
+        <form action="">
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="formInput">
+                    <input id="firstName" type="text" name="firstName" placeholder="Enter First Name" tabindex="1"
+                        required>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div class="formInput">
+                    <input type="text" name="firstName" placeholder="Enter First Name" tabindex="3" readonly>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Email</label>
+                </div>
+                <div class="formInput">
+                    <input type="text" name="firstName" placeholder="Enter First Name" tabindex="2" required>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Phone</label>
+                </div>
+                <div class="formInput">
+                    <input type="text" name="firstName" placeholder="Enter First Name" required>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Password</label>
+                </div>
+                <div class="formInput">
+                    <input type="password" name="firstName" placeholder="Enter First Name" required>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">City</label>
+                </div>
+                <div class="formInput">
+                    <select name="" id="" size="5" multiple>
+                        <option value="dhaka">Dhaka</option>
+                        <option value="dhaka">Barisal</option>
+                        <option value="dhaka">khulna</option>
+                        <option value="dhaka" disabled>pirojpur</option>
+                        <option value="dhaka">Badda</option>
+                    </select>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Gender</label>
+                </div>
+                <div class="formInput">
+                    <label for="maleRadio">Male : </label>
+                    <input type="radio" name="gender" id="maleRadio" checked>
+                    <label for="femaleRadio">Female : </label>
+                    <input type="radio" name="gender" id="femaleRadio">
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Subject</label>
+                </div>
+                <div class="formInput">
+                    <label for="banglaRadio">Bangla : </label>
+                    <input type="radio" name="subject" id="banglaRadio" disabled>
+                    <label for="englishRadio">English : </label>
+                    <input type="radio" name="subject" id="englishRadio">
+                    <label for="mathRadio">Math : </label>
+                    <input type="radio" name="subject" id="mathRadio" checked>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Date</label>
+                </div>
+                <div class="formInput">
+                    <input type="date" name="firstName" placeholder="Enter First Name" required>
+                </div>
+            </div>
+            <div class="allInput">
+                <div class="formLabel">
+                    <label for="firstName">Image</label>
+                </div>
+                <div class="formInput">
+                    <input type="file" name="firstName" placeholder="Enter First Name" required>
+                </div>
+            </div>
+            <div class="allInput">
+                <input type="submit" name="submit">
+                <input type="reset" name="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

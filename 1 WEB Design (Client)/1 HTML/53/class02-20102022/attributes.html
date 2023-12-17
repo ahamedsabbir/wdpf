@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function parse(v){
+            var n = '&#x'+v+';';
+            document.getElementById('result').innerHTML += n;
+
+        }
+    </script>
+    <style>
+        p{
+            color: blue;
+            background-color: aqua;
+        }
+        p{
+            color: brown; 
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body ononline="" onoffline="">
+    <button onclick="parse('985')">&#x985;</button>
+    <button onclick="parse('986')">&#x986;</button>
+    <button onclick="parse('987')">&#x987;</button>
+    <button onclick="parse('988')">&#x988;</button>
+    <button onclick="parse('989')">&#x989;</button>
+    <button onclick="parse('990')">&#x990;</button>
+    <button onclick="parse('9AE')">&#x9AE;</button>
+    <!-- <button onmouseover="parse('9AE')" onmousemove="parse('9AE')">&#x9AE;</button> -->
+    <p id="result"></p>
+    <img src="assets/css-syntax.png" alt="">
+    <h3 title="core attribute">Core attributes: core attributes can be inserted into any element</h3>
+    <ul>
+        <li>ID</li>
+        <li title="class attrinute">Class</li>
+        <li>Style</li>
+        <li title="title attribute">Title</li>
+    </ul>
+    <p style="color: red;" contenteditable="true" spellcheck="true"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <p dir="rtl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <p dir="rtl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <p dir="rtl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <p dir="rtl" style="color: fuchsia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <p dir="rtl"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde maiores eius fuga ut eum culpa, ad adipisci, facilis officia inventore molestias accusamus rem voluptatem praesentium nulla perferendis, nobis odit eaque.</p>
+    <bdo dir="rtl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facere dolore impedit asperiores ea totam delectus rerum cumque? Ut quo dolor minus veniam accusantium, aut culpa eius modi in laudantium.
+    </bdo>
+    <p hidden>আকাশ জানে তারা জানে
+
+        জানে বনের পাখি
+        
+        তোমায় আমি কত ভালোবাসি
+        
+        জানে দু’চোখের আঁখি</p>
+        <h1>&#x986;&#x9AE;</h1>
+</body>
+</html>

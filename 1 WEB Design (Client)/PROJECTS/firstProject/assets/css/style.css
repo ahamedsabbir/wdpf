@@ -1,0 +1,53 @@
+:root {
+    --yellow: #FFC800;
+    --blue: #149777;
+  }
+*{
+    font-family: "Times New Roman", Times, serif;
+}
+a{
+    text-decoration: none;
+    color: #009877;
+}
+body{
+    background-color: #E7EDEE;
+}
+.headSection{
+    background-color: var(--blue);
+}
+.navbar-brand{
+    font-size: 19px;
+    font-weight: 700;
+}
+.post-button{
+    width: 132px;
+    height: 46px;
+    background-color: var(--yellow);
+}
+.search-section {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 36px;
+}
+.search-input{
+    background-color: none;
+    padding: 15px;
+    border: 0px;
+    width: 796px;
+}
+.search-input:focus{
+    border: 0px;
+}
+.search-button{
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+}
+.loopContent{
+    background-color: white;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+        .mainDiv {
+            width: 1180px;
+            margin: 0px auto;
+        }
+
+        .mainHeading {
+            text-align: center;
+        }
+
+        .formDiv {
+            width: 1150px;
+            background-color: brown;
+            background-image: url(png.png);
+            background-position: 50% 50%;
+            background-size: 500px 500px;
+            background-repeat: no-repeat;
+            margin-top: 40px;
+            border: 5px dashed black;
+            padding: 15px;
+        }
+
+        label {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .levelSpan {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .formElement {
+            padding-top: 10px;
+        }
+
+        .leavelDesign {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .formInfo {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .textareaLebel {
+            vertical-align: top;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="password"],
+        input[type="date"] {
+            padding: 10px;
+            width: 400px;
+        }
+
+        select {
+            padding: 10px;
+            width: 426px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px;
+            width: 200px;
+            border-radius: 3px;
+            background-color: antiquewhite;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            border-radius: 0px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h1 class="mainHeading"><a href="">Student Registration Form Using Table In HTML</a></h1>
+        <div class="formDiv">
+            <form action="">
+                <div class="formElement">
+                    <label for="firstName" class="leavelDesign">First Name</label>
+                    <input type="text" name="firstName" id="firstName" value="Israt Ahamed" tabindex="1" autofocus
+                        required />
+                    <span class="formInfo">(Max 50 Characters Allowed)</span>
+                </div>
+                <div class="formElement">
+                    <label for="lastName" class="leavelDesign">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" value="sabbir" tabindex="2" required />
+                    <span class="formInfo">(Max 50 Characters Allowed)</span>
+                </div>
+                <div class="formElement">
+                    <label for="emailid" class="leavelDesign">Email ID</label>
+                    <input type="text" name="emailid" id="emailid" value="onikitbd@gmail.com" tabindex="3" required />
+                </div>
+                <div class="formElement">
+                    <label for="mobileNumber" class="leavelDesign">Mobile Number</label>
+                    <input type="text" name="mobileNumber" id="mobileNumber" value="01775567493" tabindex="4"
+                        required />
+                    <span class="formInfo">(8 Digits Allowed)</span>
+                </div>
+                <div class="formElement">
+                    <span class="leavelDesign levelSpan">Gender</span>
+                    <label for="maleGender">Male</label>
+                    <input type="radio" name="mobileNumber" id="maleGender" checked />
+                    <label for="femaleGender">Female</label>
+                    <input type="radio" name="mobileNumber" id="femaleGender" />
+                </div>
+                <div class="formElement">
+                    <label for="dateData" class="leavelDesign">Date</label>
+                    <input type="date" name="mobileNumber" id="dateData" value="01775567493" tabindex="5"
+                        required />
+                </div>
+                <div class="formElement">
+                    <label for="address" class="leavelDesign textareaLebel">Address</label>
+                    <textarea name="" id="address" cols="55" rows="5" tabindex="6"></textarea>
+                </div>
+                <div class="formElement">
+                    <label for="cityName" class="leavelDesign">City</label>
+                    <input type="text" name="cityName" id="cityName" value="Dhaka" tabindex="7" required />
+                    <span class="formInfo">(Max 50 Characters Allowed)</span>
+                </div>
+                <div class="formElement">
+                    <label for="pinCode" class="leavelDesign">Pin Code</label>
+                    <input type="password" name="cityName" id="pinCode" value="1234" tabindex="8" required />
+                    <span class="formInfo">(Max 6 Numbers Allowed)</span>
+                </div>
+                <div class="formElement">
+                    <label for="state" class="leavelDesign">State</label>
+                    <select name="" id="state" tabindex="9">
+                        <option value="">Dhaka</option>
+                        <option value="">Badda</option>
+                        <option value="">khulna</option>
+                        <option value="">barguna</option>
+                        <option value="">kajipara</option>
+                    </select>
+                </div>
+                <div class="formElement">
+                    <label for="allcountry" class="leavelDesign">Contry</label>
+                    <select id="allcountry" tabindex="10">
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albania">Albania</option>
+                        <option value="algeria">Algeria</option>
+                        <!-- Add more options for other countries -->
+                    </select>
+                </div>
+                <div class="formElement">
+                    <span class="leavelDesign levelSpan">Hobbies</span>
+                    <input type="checkbox" name="hobbies" id="drawing" checked />
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" name="hobbies" id="singing" />
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" name="hobbies" id="dancing" />
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" name="hobbies" id="sketching" />
+                    <label for="sketching">Sketching</label>
+                    <input type="checkbox" name="hobbies" id="other" />
+                    <label for="other">Other</label>
+                    <!-- <input type="text" name="state" id="state" value="Dhaka" required/>
+                    <span class="formInfo">(Max 50 Characters Allowed)</span> -->
+                </div>
+                <div class="formElement">
+                    <div style="width:201px; overflow: hidden; float: left;">
+                        <span class="leavelDesign levelSpan">Qulifecation</span>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <input type="checkbox" name="qulifecation" id="HighSchool" checked />
+                        <label for="HighSchool">High School (10th)</label><br />
+                        <input type="checkbox" name="qulifecation" id="HigherSchool" />
+                        <label for="HigherSchool">Higher School (12th)</label><br />
+                        <input type="checkbox" name="qulifecation" id="GraduationBachelors" />
+                        <label for="GraduationBachelors">Graduation (Bachelors)</label><br />
+                        <input type="checkbox" name="qulifecation" id="PostBachelors" />
+                        <label for="PostBachelors">Post Graduation (Masters)</label><br />
+                    </div>
+                </div>
+                <div class="formElement">
+                    <div style="width:201px; overflow: hidden; float: left;">
+                        <span class="leavelDesign levelSpan">Courses Applies For</span>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <input type="radio" name="qulifecation" id="BCA" checked />
+                        <label for="BCA">BCA (Bachelor of Computer Applications)</label><br />
+                        <input type="radio" name="qulifecation" id="BCom" />
+                        <label for="BCom">B.Com (Bachelor Of Commerce)</label><br />
+                        <input type="radio" name="qulifecation" id="BSc" />
+                        <label for="BSc">B. Sc (Bachelor of Science)</label><br />
+                        <input type="radio" name="qulifecation" id="BA" />
+                        <label for="BA">BA (Bachelor of Arts)</label><br />
+                        <input type="radio" name="qulifecation" id="MCA" />
+                        <label for="MCA">MCA (Masters of Commerce)</label><br />
+                        <input type="radio" name="qulifecation" id="MCom" />
+                        <label for="MCom">M. Com (Masters of Commerce)</label><br />
+                        <input type="radio" name="qulifecation" id="MSc" />
+                        <label for="MSc">M. Sc (Masters of Science)</label><br />
+                        <input type="radio" name="qulifecation" id="MA" />
+                        <label for="MA">M. A (Masters of Arts)</label><br />
+                    </div>
+                </div>
+                <div class="formElement">
+                    <div style="width:201px; overflow: hidden; float: left;">
+                        <span class="leavelDesign levelSpan">Photo</span>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <input type="file" name="photo" id="drawing" tabindex="11" multiple />
+                    </div>
+                </div>
+                <div class="formElement" style="text-align: center;">
+                    <input type="submit" name="submit" tabindex="12" />
+                    <input type="reset" name="reset" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+HW 1: create an image gallery with your favorite 10 images 
+HW 2: create a newspaper portal to get all newspaper links. Bangla and English

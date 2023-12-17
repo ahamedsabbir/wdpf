@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>FRUITS</title>
+    <style>
+        #align {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="align">
+        <img src="asset/Fruit-Names-in-English.webp" alt="" usemap="#bd" />
+        <map name="bd">
+            <area shape="rect" data-name="apple" coords="50,140,265,365" href="apple.html" alt="" target="_blank">
+            <area shape="rect" data-name="Avocados" coords="285,380,490,600" href="Avocados.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="kawlaa" coords="740,380,940,595" href="Banana.html" alt="" target="_blank">
+            <area shape="rect" data-name="Cheery" coords="510,145,775,360" href="Cherry.html" alt="" target="_blank">
+            <area shape="rect" data-name="Dragon" coords="285,610,485,830" href="Dragon-fruit.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="Graps" coords="740,615,942,831" href="Graps.html" alt="" target="_blank">
+            <area shape="rect" data-name="Kiwi" coords="280,140,490,360" href="Kiwi.html" alt="" target="_blank">
+            <area shape="rect" data-name="Lemon" coords="734,140,945,360" href="Lemon.html" alt="" target="_blank">
+            <area shape="rect" data-name="Mango" coords="54,377,260,600" href="Mango.html" alt="" target="_blank">
+            <area shape="rect" data-name="Mangosteen" coords="740,850,940,1065" href="Mangosteen.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="Orang" coords="510,610,712,831" href="Orang.html" alt="" target="_blank">
+            <area shape="rect" data-name="Watermelon" coords="55,615,260,830" href="Watermelon.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="strawberries" coords="515,380,710,597" href="strawberries.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="Pomegranate" coords="510,850,710,1065" href="Pomegranate.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="Pineapple" coords="287,851,485,1065" href="Pineapple.html" alt=""
+                target="_blank">
+            <area shape="rect" data-name="Papaya" coords="55,850,256,1065" href="Papaya.html" alt="" target="_blank">
+        </map>
+
+    </div>
+    <script src="asset/jquery-3.7.1.min.js"></script>
+    <script>
+        function getVoices() {
+            let voices = speechSynthesis.getVoices();
+            if (!voices.length) {
+                let utterance = new SpeechSynthesisUtterance("");
+                speechSynthesis.speak(utterance);
+                voices = speechSynthesis.getVoices();
+            }
+            return voices;
+        }
+        function talk(s) {
+            if ('speechSynthesis' in window) {
+                let speakData = new SpeechSynthesisUtterance();
+                speakData.volume = 1; // From 0 to 1
+                speakData.rate = .8; // From 0.1 to 10
+                speakData.pitch = 1; // From 0 to 2
+                speakData.text = s;
+                speakData.lang = 'bn';
+                console.log(getVoices());
+                speakData.voice = getVoices()[0];
+                speechSynthesis.speak(speakData);
+            } else {
+                // Speech Synthesis is not Supported 😞 
+            }
+        }
+        $(document).ready(function () {
+            $("area").each(function () {
+                $(this).removeAttr("href");
+            });
+
+            $("area").click(function (e) {
+                e.preventDefault();
+                let name = $(this).data("name");
+                // alert(name);
+                talk(name)
+            });
+        });
+    </script>
+</body>
+
+</html>

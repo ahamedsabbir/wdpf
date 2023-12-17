@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #enterValue{
+            
+        }
+        .imgItem{
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h3>Comment Shortcut</h3>
+    <hr />
+    <ol>
+        <li contenteditable="">Select text & click blank side of the page</li>
+        <li>Alt+Shift</li>
+        <li><b>&lt;!-- Comment --&gt;</b></li>
+    </ol>
+    <h3>Select Same Horizontal Line VS Shortcut</h3>
+    <hr />
+    <ol>
+        <li contenteditable="">click on the line</li>
+        <li>Ctrl+/</li>
+        <li><b>&lt;!-- Comment --&gt;</b></li>
+    </ol>
+    <!-- click to open pic form loram image simple project -->
+    <h3 onclick="showCode()">Click Make Gallery</h3>
+    <hr />
+    <div id="enterValue"></div>
+    <script>
+        function showCode(){
+            var randName = parseInt(Math.random()*100);
+            document.querySelector('#enterValue').innerHTML += "<a href='https://picsum.photos/id/"+randName+"/300/200'><img class='imgItem' src='https://picsum.photos/id/"+randName+"/300/200' alt='no image' /></a>";
+        }
+    </script>
+    <br />
+    <!-- auto open pic form loram image simple project -->
+    <h3>Auto Gallery</h3>
+    <hr />
+    <div id="enterValue02"></div>
+    <script>
+        const fruits = ['apple', 'banana', 'cherry'];
+        for (let i = 0; i < 24; i++) {
+            document.querySelector('#enterValue02').innerHTML += "<a href='https://picsum.photos/id/"+i+"/300/200'><img class='imgItem' src='https://picsum.photos/id/"+i+"/300/200' alt='no image' />"+fruits[i]+"</a>";
+        }
+    </script>
+</body>
+</html>

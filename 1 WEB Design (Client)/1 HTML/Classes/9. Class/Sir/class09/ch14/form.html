@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 200px;
+            /* background-color: rgba(85, 107, 47,0.3); */
+            /* color: aliceblue; */
+            text-shadow: 0px 0px 5px green;
+            margin: 10px;
+        }
+        label.inlinelab{
+            display: inline;            
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+        }
+        input[type='submit']{
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background-color: green;
+            border-radius: 20px;
+            font-size: 3em;
+            
+        }
+        form{
+            background-image: linear-gradient(to top, #c9c9c9, gray);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Sensitive form's method has to be post method.</p>
+    <h1 style="text-align: center">Html Form Example</h1>
+    <form action="formvalue.php" method="POST">
+        <fieldset>
+            <legend>Name</legend>
+            <div>
+                <label for="fname">First Name :</label>
+                <input type="text" placeholder="first name" id="fname" name="fname"  required>
+            </div>
+            <div>
+                <label for="mname">Middle Name :</label>
+                <input type="text" placeholder="your middle name" name="mname" id="mname">
+            </div>
+            <div>
+                <label for="lname">Last Name :</label>
+                <input type="text" placeholder="your last name" id="lname" name="lname" required>
+            </div>
+        </fieldset>
+    
+    
+    <fieldset>
+        <legend>Login Info</legend>
+    <div>
+        <label for="email">Email :</label>
+        <input type="email" placeholder="ex. somaone@example.com" name="email" id="email" required>
+    </div>
+    <div>
+        <label for="pass">Password :</label>
+        <!-- <input type="password" placeholder="password" id="pass" name="pass" required minlength="6" maxlength="20"> -->
+        <input type="password" id="pass" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Personal Info</legend>
+<div>
+    <label for="mobile">Mobile :</label>
+    <input type="text" placeholder="your phone number" id="mobile" name="mobile" required>
+</div>
+    <div>
+        <label for="image">Image</label>
+        <input type="file" name="" id="image" multiple>
+    </div>
+    <div>
+        <label for="dob">DOB :</label>
+        <input type="date" name="" id="dob">
+    </div>
+    <div>
+        <label for="">Gender :</label>
+        <label class="inlinelab" for="male">Male</label>  
+        <input type="radio" name="s" id="male" checked> | 
+        <label class="inlinelab" for="female">FeMale</label> 
+        <input type="radio" name="s" id="female"> |
+        <label class="inlinelab" for="other">Other</label> 
+        <input type="radio" name="s" id="other"> |
+    </div>
+    <div>
+        <label for="">Age : </label>
+        <input type="number" name="" id="" min="18" max="60">
+    </div>
+    <div>
+        <label for="">Hobby : </label> <br>
+        <label for="read" class="inlinelab">Reading</label> <input type="checkbox" id="read"/> |
+        Writing <input type="checkbox"/> |
+        Cooking <input type="checkbox"/> |
+        Playing <input type="checkbox"/> |
+        Travelling <input type="checkbox"/> |
+        Sleeping <input type="checkbox"/> |
+        Facebooking <input type="checkbox" checked/> | 
+        Tiktoking <input type="checkbox"> |
+        Coding <input type="checkbox"/>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Academic Information</legend>
+    <div>
+        <label for="batch">Batch</label>
+        <select name="" id="batch">
+            <option value="">Select</option>
+            <option value="">Networking</option>
+            <option value="" selected>WDPF</option>
+            <option value="">DDD</option>
+            <option value="">J2EE</option>
+            <option value="">GAVE</option>
+            <option value="">.NET</option>
+        </select>
+    </div>
+</fieldset>
+    
+    <div>
+        <label for="details">Your Details:</label>
+        <!-- <textarea name="" id="details" cols="30" rows="6"></textarea> -->
+        <textarea name="" id="details"></textarea>
+    </div>
+    <div>
+        <label for=""> </label>
+        <input type="submit" name="reg" value="Save your Information">
+    </div>
+</form>
+</body>
+
+</html>

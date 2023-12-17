@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        #adformbody{
+           max-width: 500px;
+           max-height: 100%;
+           background-color: aquamarine;
+           margin: auto;
+           padding: 2%;
+           border-style: ridge;
+        }
+        #subadres{
+            text-align: center;
+            padding: 2%;
+        }
+        #fmlabel{
+            /* display: inline-block; */
+            width: 170px;
+            margin-top: 10px;
+            display: inline-table; 
+        }
+        input{
+            display: inline-table;
+        }
+        textarea{
+            /* display: inline-block; */
+            width: 100%;
+        }
+
+    </Style>
+</head>
+<body>
+    <Div id="adformbody">
+        <form action="">
+            <h2>Student Admission Form</h2><hr>
+            <div>
+            <label id="fmlabel" for="inftn">First Name</label>
+                <input type="text"id="inftn" Name="" placeholder="First Name" maxlength="50"><br>
+            <label id="fmlabel" for="inln">Last Name</label>
+                <input type="text" id="inln" Name="" placeholder="Last Name" maxlength="50"><br>
+            <label id="fmlabel" for="innnm">Nickname</label>
+                <input type="text"id="innnm" Name="" placeholder="Nickname"><br>
+            <label id="fmlabel" for="ingml">Email ID</label>
+                <input type="text"id="ingml" Name="" placeholder="abcdef@gmail.com" inputmode="email"><br>
+            <label id="fmlabel" for="inpnnbr">Mobaile Number</label>
+                <input type="tel" id="inpnnbr" Name="" placeholder="+8801xxxxxxxx" inputmode="tel" maxlength="11" minlength="11"><br>
+            </div>
+            <div>
+                <label id="fmlabel" for="inbgselect">Blood Group</label>
+                <select id="inbgselect">
+                <option value="">A(+)ve</option>
+                <option value="">B(+)ve</option>
+                <option value="">O(+)ve</option>
+                <option value="">AB(+)ve</option>
+                <option value="">A(-)ve</option>
+                <option value="">B(-)ve</option>
+                <option value="">O(-)ve</option>
+                <option value="">AB(-)ve</option>
+                </select>
+            </div>
+            <div>
+                <label id="fmlabel" for="">Gender</label>
+                <label for="inmlrid">Male</label>
+                    <input type="radio" id="inmlrid" Name="gender">
+                <label for="infmrid">Female</label>
+                    <input type="radio" id="infmrid" Name="gender"><br>
+            <div>
+                <label id="fmlabel" for="indate">Date of Birth(DOB)</label>
+                <input type="date" name="" id="indate">
+            </div>
+            </div>
+            <div>
+                <label id="fmlabel" for="inaddrs">Address</label>
+                <textarea name="Address" rows="4" placeholder="Type your (Village, Post Office name)" ></textarea> <br>
+                    <!-- <input type="text" id="inaddrs" Name="" placeholder="Type your (Village, Post Office name)"><br> -->
+                <label id="fmlabel" for="inpstn">Police Station</label>
+                    <input type="text" id="inpstn" Name="" placeholder="Police Station"><br>
+                <label id="fmlabel" for="indist">District</label>
+                    <input type="text" id="indist" Name="" placeholder="District"><br>
+                <label id="fmlabel" for="inzipc">Zip Code</label>
+                    <input type="text" id="inzipc" Name="" placeholder="1976" maxlength="4" minlength="4"><br>
+                <label id="fmlabel" for="indivin">Divition</label>
+                    <input type="text" id="indivin" Name="" placeholder="Divition"><br>
+                <label id="fmlabel" for="idcount">Country</label>
+                    <input type="text" id="idcount" Name="" placeholder="Bangladesh" value="Bangladesh"><br>
+            </div>
+            <div>
+                <span><label id="fmlabel" for="">Hobbies</label></span>
+                <span><input type="checkbox" name="Drawing" id="inhdrw" value="Drawing"><label for="inhdrw">Drawing</label>
+                <input type="checkbox" name="Singing" id="inhsing" value="Singing"><label for="inhsing">Singing</label>
+                <input type="checkbox" name="Dancing" id="inhdan" value="Dancing"><label for="inhdan">Dancing</label>
+                <input type="checkbox" name="Skething" id="inhske" value="Skething"><label for="inhske">Skething</label>
+                <input type="checkbox" name="Others" id="inhoth" value="Others"><label for="inhoth">Others</label>
+                <input type="text" name="" placeholder="Ex. Teaching"></span>
+            </div>
+            <br>
+            <div>
+                <span><label id="fmlabel" for="">Qualification</label></span>
+                <span><input type="checkbox" id="inqssc" name="" value="">
+                <label for="inqssc">High School (10th/SSC)</label><br>
+                <input type="checkbox" id="inqhsc" name="" value="">
+                <label for="inqhsc">Higher School (12th/HSC)</label><br>
+                <input type="checkbox" id="inqBachelors" name="" value="">
+                <label for="inqBachelors">Graduation (Bachelors)</label><br>
+                <input type="checkbox" id="inqMaster" name="" value="">
+                <label for="inqMaster">Post Graduation (Master's)</label><br>
+                <input type="checkbox" id="inqphd" name="" value="">
+                <label for="inqphd">Phd</label></span><br>
+            </div>
+            <br>
+            <div style="columns: 2;">
+                <span><label id="fmlabel" for="">Courses Aplied for</label></span><br>
+                <span><input type="radio" Name="CoursesApli" value="" id="rbca">
+                <label for="rbca">BCA (Bachelor of Computer Applications)</label><br>
+                <input type="radio" Name="CoursesApli" value="" id="rbcom">
+                <label for="rbcom">B.Com (Bachelor of Commerce)</label><br>
+                <input type="radio" Name="CoursesApli" value="" id="rba">
+                <label for="rba">BA (Bachelor of Arts)</label><br>
+                <input type="radio" Name="CoursesApli" value="" id="rmca">
+                <label for="rmca">MCA(Master of Computer Applications)</label><br>
+                <input type="radio" Name="CoursesApli" value="" id="rmcom">
+                <label for="rmcom">M.Com(Master Of Science)</label><br>
+                <input type="radio" Name="CoursesApli" value="" id="rma">
+                <label for="rma">MA (Master of Arts)</label><br></span>
+            </div>
+            <br>
+            <div id="subadres">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </Div>
+</body>
+</html>

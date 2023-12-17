@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Video Gallery</title>
+    <style>
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="videos" style="overflow-y: scroll;">
+            <img class="active" src="assets/img/yUhQfY9eTKk-HD.jpg" videoUrl="https://www.youtube.com/embed/yUhQfY9eTKk?si=HbzpDMTNrA4OtnAz">
+            <img src="assets/img/Z5qhj5vDLPY-HD.jpg" videoUrl="https://www.youtube.com/embed/Z5qhj5vDLPY?si=lYZ58WHuejmcR1mU">
+            <img src="assets/img/qpM0ybzMeZo-HD.jpg" videoUrl="https://www.youtube.com/embed/qpM0ybzMeZo?si=3z4_hgr9YT_OqEQS">
+            <img src="assets/img/w33GxwqbnyU-HD.jpg" videoUrl="https://www.youtube.com/embed/w33GxwqbnyU?si=ghdoLOQpPp2TITxz">
+            <img src="assets/img/Ar7wnUNXOZA-HD.jpg" videoUrl="https://www.youtube.com/embed/Ar7wnUNXOZA?si=yIVQao4N8gQaUTSb">
+            <img src="assets/img/Gx7OLd-qEaw-HD.jpg" videoUrl="https://www.youtube.com/embed/Gx7OLd-qEaw?si=pde92DLkWoWg_-t0">
+            <img src="assets/img/vlaf1Au6x1E-HD.jpg" videoUrl="https://www.youtube.com/embed/vlaf1Au6x1E?si=lWfsQ-jROH5rpmRD">
+            <img src="assets/img/2_QT6eDahUY-HD.jpg" videoUrl="https://www.youtube.com/embed/2_QT6eDahUY?si=1qjuU0P48MeqxDuJ">
+            <img src="assets/img/FVUNSFETWlg-HD.jpg" videoUrl="https://www.youtube.com/embed/FVUNSFETWlg?si=vloTJzXeMcM0tpfd">
+            <img src="assets/img/ZNH7wgTBTfA-HD.jpg" videoUrl="https://www.youtube.com/embed/ZNH7wgTBTfA?si=UiT1siZc0x2CotwN">
+        </div>
+        <div class="main-video">
+            <iframe src="assets/file_example_MP4_1280_10MG.mp4" muted style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.videos img').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var src = $(this).attr('videoUrl');
+                $('.main-video iframe').attr('src',src);
+            });
+        });
+    </script>
+
+</body>
+</html>

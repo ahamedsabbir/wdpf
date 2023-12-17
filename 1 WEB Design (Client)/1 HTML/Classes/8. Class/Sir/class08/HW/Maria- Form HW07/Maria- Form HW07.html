@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mylabel {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .hob {
+            /* display: inline-block; */
+            /* width: 50px; */
+            margin-bottom: 10px;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        #Formbs {
+            border-style: dotted;
+            background-color: aquamarine;
+            border: 5px outset;
+            width: 80%;
+            height: 100%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Student Registretion Form</h1>
+    <div id="Formbs">
+        <form action="">
+
+            <label class="mylabel" for="fname">First name</label>
+            <input id="fname" type="text" placeholder="first name"> (Max 50 characters Allowed) <br>
+            <label class="mylabel" for="">Last name</label>
+            <input type="text" placeholder="Last name"> (Max 50 characters Allowed)<br>
+            <label class="mylabel" for="">Email ID</label>
+            <input type="email" placeholder="abc@gmail.com"><br>
+            <label class="mylabel" for="">Phone Number</label>
+            <input type="text" placeholder="Phone Number">(10 digits Allowed)<br>
+            <label class="mylabel" for="DOB">DOB</label>
+            <input type="date" name="DOB"><br>
+            <label class="mylabel" for="">Gender</label>
+            <label for="m">Male</label>
+            <input type="radio" name="g" id="m">
+            <label for="f">female</label>
+            <input type="radio" name="g" id="f"><br>
+            <label class="mylabel" for="">Address</label>
+            <textarea name="" id="Address" cols="30" rows="10"></textarea><br>
+            <label class="mylabel" for="">City</label>
+            <input type="text" placeholder="Dhaka">(Max 50 characters Allowed)<br>
+            <label class="mylabel" for="">Pin Code</label>
+            <input type="text" placeholder="528852">(Max 06characters Allowed)<br>
+            <label class="mylabel" for="">Division</label>
+            <input type="text" placeholder="Dhaka">(Max 20 characters Allowed)<br>
+            <label class="mylabel" for="">Country</label>
+            <input type="text" placeholder="Bangladesh">(Max 20 characters Allowed)<br>
+            <label class="mylabel" for="Hobbies">Hobbies</label>
+            <input type="checkbox" name="Drowing" id="Drowing" value="Drowing">
+            <label class="hob" for="Hobbies">Drowing</label>
+            <label class="hob" for=""></label>
+            <input type="checkbox" name="Singing" id="Singing" value="Singing">
+            <label class="hob" for="Hobbies">Singing</label>
+            <label class="hob" for=""></label>
+            <input type="checkbox" name="Dancing" id="Dancing" value="Dancing">
+            <label class="hob" for="Hobbies">Dancing</label>
+            <label class="hob" for=""></label>
+            <input type="checkbox" name="Sketching" id="Sketching" value="Sketching">
+            <label class="hob" for="Hobbies">Sketching</label>
+            <input type="checkbox" name="Others" id="Others" value="Others">
+            <label class="hob" for="Hobbies">Others</label>
+            <input type="text" placeholder="Ex.">(Max 50 characters Allowed) <br><br>
+
+            <label class="mylabel" for="">Qualification</label>
+            <input type="checkbox" name="S.S.C" id="S.S.C" value="S.S.C">
+            <label class="hob" for="Qualification">S.S.C</label>|
+            <input type="checkbox" name="H.S.C" id="H.S.C" value="H.S.C">
+            <label class="hob" for="Qualification">H.S.C</label>|
+            <input type="checkbox" name="B.B.A" id="B.B.A" value="B.B.A">
+            <label class="hob" for="Qualification">B.B.A</label>|
+            <input type="checkbox" name="M.B.A" id="M.B.A" value="M.B.A">
+            <label class="hob" for="Qualification">M.B.A</label><br>
+
+            <label class="mylabel" for="">Course Apply For</label>
+            <input type="checkbox" name="BCA" id="BCA" value="BCA">
+            <label class="hob" for="Qualification">BCA</label>
+            <input type="checkbox" name="B.COM" id="B.COM" value="B.COM">
+            <label class="hob" for="Qualification">B.COM</label>
+            <input type="checkbox" name="BA" id="BA" value="BA">
+            <label class="hob" for="Qualification">BA</label>
+            <input type="checkbox" name="B.Sc" id="B.Sc" value="B.Sc">
+            <label class="hob" for="Qualification">B.Sc</label><br>
+            <div style="text-align: center;"> <input type="button" value="Submit">
+                <input type="button" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
