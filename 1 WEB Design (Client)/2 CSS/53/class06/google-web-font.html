@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Google Fonts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Source+Serif+4:opsz@8..60&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'shohan';
+            src: url('assets/fonts/Alinur SnigdhaUnicode.ttf');
+        }
+
+        @font-face {
+            font-family: 'idb';
+            src: url('assets/fonts/Alinur SnigdhaUnicode.ttf');
+        }
+
+        header h1 {
+            text-align: center;
+            font-family: shohan, 'Luckiest Guy', cursive;
+            color: lightcoral;
+            text-shadow: 0px 0px 2px rgb(218, 169, 169);
+            letter-spacing: 0.1em;
+        }
+
+        header h1::first-letter {
+            color: coral;
+            font-size: larger;
+        }
+
+        h3 {
+            font-family: idb, 'Luckiest Guy', cursive;
+            color: darkolivegreen;
+            text-shadow: 0px 0px 2px rgb(107, 142, 35);
+            letter-spacing: 0.2em;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            /* border: 1px solid #ff0000; */
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav a, footer a {
+            padding: 10px;
+            text-decoration: none;
+            color: chocolate;
+        }
+        footer a:hover{
+            color: blue;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: auto 30%;
+            grid-column-gap: 50px;
+        }
+
+        main section {
+            /* width: 67%; */
+            /* padding: 10px; */
+        }
+
+        main aside {
+            /* width: 30%; */
+            /* padding: 10px; */
+        }
+
+        aside img {
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+
+        marquee {
+            height: 200px;
+        }
+
+        main p {
+            font-family: 'Source Serif 4', serif;
+            text-align: justify;
+        }
+
+        main p::first-letter {
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0px;
+            border: 0px;
+            padding: 10px 0px;
+            width: 100%;
+            /* padding: 10px; */
+        }
+
+        input[type="submit"] {
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        footer {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            height: 150px;
+            /* background-color: aqua; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>আমাদের ওয়েবসাইটে স্বাগতম</h1>
+        </header>
+        <nav>
+            <a href="#">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="#">About <i class="fa fa-info" aria-hidden="true"></i></a>
+            <a href="#">Shop <i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <a href="#">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="#">Contact <i class="fa fa-phone" aria-hidden="true"></i></a>
+        </nav>
+        <hr>
+        <main>
+            <section>
+                <h3>welcome to our site</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis deleniti corrupti ullam ratione
+                    perspiciatis dolores blanditiis. Enim provident, ipsam non debitis inventore consequuntur magnam
+                    repellat atque! Nobis facere voluptatibus exercitationem!
+                    Omnis qui rem, vitae repudiandae et ex maxime delectus officiis eligendi, beatae esse corrupti modi
+                    exercitationem culpa, obcaecati reiciendis minus quasi est saepe! Doloremque laboriosam quidem ad
+                    molestias reprehenderit temporibus?
+                    Consequuntur itaque eligendi porro. Eaque aliquid nostrum repellat ad tempora iste eius, veritatis
+                    non
+                    excepturi adipisci quasi quidem. In consequuntur minus, sunt velit perspiciatis unde harum
+                    doloremque
+                    recusandae inventore accusantium.
+                    Perferendis fugiat et explicabo deleniti maxime id quidem optio deserunt. Excepturi alias sapiente,
+                    natus recusandae saepe fuga molestiae aliquam? Dolorem quidem mollitia quaerat quam nesciunt!
+                    Molestiae
+                    quae laboriosam autem eius?
+                    Ab maiores corrupti officia tempore, quo molestiae quas placeat quam minima beatae ipsa accusamus
+                    quibusdam quod magni in nostrum, asperiores odit ex accusantium, architecto ducimus iure voluptates.
+                    Et,
+                    recusandae impedit?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt beatae dignissimos necessitatibus
+                    eos
+                    dolorem nisi pariatur placeat atque, deleniti quae repudiandae ullam fuga quasi quos consequatur id
+                    adipisci veritatis est?
+                    Voluptate, eius quos quas voluptas nesciunt provident ad iusto cum ex a consectetur nisi nam ipsum
+                    ducimus hic, distinctio sit esse excepturi minima? Nesciunt earum unde autem minima, distinctio
+                    omnis.
+                    Est nam eaque in rerum corporis, qui quia. Mollitia dolorum cum, eius odio perspiciatis, hic
+                    provident
+                    saepe cumque voluptatibus magni veritatis! Eos, numquam error dignissimos quidem earum aliquam
+                    itaque
+                    explicabo!
+                    Tenetur optio odio iusto dolorum consectetur ea, id, alias a aspernatur iste doloremque cumque
+                    reprehenderit ex est ad adipisci eum, quasi laborum commodi? Vero impedit ullam facilis animi
+                    tenetur
+                    provident!
+                    Laborum optio iusto architecto officia sapiente tenetur! Consequuntur, accusantium. Sequi modi error
+                    eum
+                    natus ipsam itaque, facere sit quae ut provident ad eveniet nihil eos quasi in inventore illum
+                    atque.
+                </p>
+                <h3>Our Mission</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio culpa incidunt perferendis veritatis
+                    at
+                    inventore sequi. Fugit temporibus aut qui officia? Harum velit nobis earum tempora itaque quasi,
+                    atque
+                    vero.
+                    Sit, modi commodi labore deserunt dolor a nemo? Reiciendis ipsa adipisci eveniet! Voluptate,
+                    perspiciatis possimus voluptatem consectetur facere expedita dolore saepe, accusamus neque ipsum
+                    aliquam
+                    dolorum modi voluptatibus impedit? Maxime?
+                    Ex eius rem blanditiis aspernatur deleniti omnis odit natus quidem ad, vitae nam maiores nesciunt,
+                    odio
+                    ipsa minus totam fugiat animi harum eveniet corrupti praesentium esse. Quasi asperiores natus
+                    explicabo!
+                    Accusamus repellat culpa sed iure fuga quaerat sint iusto repudiandae ex? Fugiat excepturi,
+                    inventore
+                    laudantium labore tenetur doloremque temporibus deserunt debitis adipisci ea cum sint, maxime
+                    doloribus
+                    ut consectetur nemo.
+                    Modi velit libero consequuntur, cumque corrupti dolor recusandae nihil earum, blanditiis totam
+                    dolorem
+                    fugit architecto maxime delectus, sapiente natus repellat deserunt! Illum consequatur ut eveniet.
+                    Sunt
+                    veritatis dolorum praesentium atque!</p>
+            </section>
+            <aside>
+                <h3>Some samples</h3>
+                <marquee behavior="" direction="up">
+                    <img src="assets/images/DSC_0020.jpg" alt="">
+                    <img src="assets/images/DSC_0033.jpg" alt="">
+                    <img src="assets/images/DSC_0339.jpg" alt="">
+                    <img src="assets/images/DSC_0397.jpg" alt="">
+                    <img src="assets/images/DSC_0446.jpg" alt="">
+                    <img src="assets/images/DSC_0847.jpg" alt="">
+                </marquee>
+                <h3>Our Office</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0591471391954!2d90.36466241744382!3d23.816495699999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d9e10e8409%3A0x77fda8b66845e714!2sGenuity%20Systems%20Ltd.!5e0!3m2!1sen!2sbd!4v1667647051517!5m2!1sen!2sbd"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>For registered User</h3>
+                <form action="">
+                    <input type="text" placeholder="user name">
+                    <input type="password" name="" id="" placeholder="password">
+                    <input type="submit" value="Login">
+                </form>
+            </aside>
+        </main>
+        <footer>            
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="tel:01911123456"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

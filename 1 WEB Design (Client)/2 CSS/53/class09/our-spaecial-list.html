@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @counter-style circled-numbers {
+    system: fixed;
+    symbols: "\2460" "\2461" "\2462" "\2463" "\2464" "\2465" "\2466" "\2467" "\2468" "\2469" "\246A" "\246B" "\246C" "\246D" "\246E" "\246F" "\2470" "\2471";
+    }
+        #headingcounter h1{
+            counter-increment: step-counter;
+        }
+        #headingcounter h1::before {
+        content: counter(step-counter, circled-numbers) " . ";
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(72, 149, 170);
+    color: rgb(192, 63, 63);
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+#headingcounter h1::after {
+    content:  " ~~~~~ ";
+}
+    </style>
+</head>
+<body>
+    <div id="headingcounter">
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+    <h1>heading 1</h1>
+</div>
+</body>
+</html>

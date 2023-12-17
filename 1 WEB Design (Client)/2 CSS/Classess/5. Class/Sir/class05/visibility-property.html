@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inlinediv div {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: right;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px;
+            margin: 2px;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{  width: 300px;}
+        #imgcontainer div{ text-align: center;}
+        #onlyimage img{ display: block; margin: 10px auto;}
+        h1:active ~ div#inlinediv{ visibility: hidden;}
+    </style>
+</head>
+
+<body>
+    <h1>Displaying div in inline</h1>
+    <div id="inlinediv">
+        <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    </div>
+    
+    <hr>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="imgcontainer">
+    <div> <img src="DSC_0446.jpg" alt=""></div>
+    <div> <img src="DSC_0446.jpg" alt=""></div>
+    <div> <img src="DSC_0446.jpg" alt=""></div>
+    <div> <img src="DSC_0446.jpg" alt=""></div>
+</div>
+    <div id="onlyimage">
+    <img src="DSC_0446.jpg" alt="">
+    <img src="DSC_0446.jpg" alt="">
+    <img src="DSC_0446.jpg" alt="">
+    <img src="DSC_0446.jpg" alt="">
+</div>
+</body>
+
+</html>

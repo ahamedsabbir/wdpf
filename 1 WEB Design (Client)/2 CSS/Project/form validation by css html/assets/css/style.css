@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.mainDiv {
+    width: 50%;
+    margin: 40px auto;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 5px red;
+    border-image-source: url(../img/border.jpg);
+    border-image-slice: 153;
+    border-image-width: 113px;
+    border-image-outset: 46px;
+    border-image-repeat: repeat;
+}
+
+.itemDiv {
+    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.labelDiv {
+    float: left;
+    width: 30%;
+}
+
+.inputDiv {}
+
+input[type="text"],
+input[type="password"],
+select {
+    padding: 5px 2px;
+    width: 300px;
+    border: 1px solid orange;
+    border-radius: 3px;
+}
+input[type="image"]{
+    width: 150px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus
+{
+    background-color: antiquewhite;
+}
+input[type="text"]:invalid,
+input[type="password"]:invalid
+{
+    background-color: rgb(221, 44, 44);
+}
+input[type="text"]:valid,
+input[type="password"]:valid
+{
+    background-color: rgb(44, 221, 59);
+}
+
+textarea {
+    border: 1px solid orange;
+    border-radius: 3px;
+    width: 300px;
+}
+
+button[name="reset"],
+button[name="submit"] {
+    padding: 10px 15px;
+    border: 1px solid orange;
+    border-radius: 3px;
+}
+#male{
+    display: none;
+}
+#male + label + span{
+}
+#female{
+    display: none;
+}
+#female + label + span{
+}
+.genderRadion{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url(../img/radiobutton.png);
+    background-color: brown;
+    background-position: -15px -49px;
+    background-repeat: no-repeat;
+    background-size: 198px;
+    border-radius: 50%;
+}
+.genderRadion:hover{
+    background-position: -74px -49px;
+}
+input[name="gender"]:checked + .genderRadion{
+    background-position: -133px -49px;
+}
+#userName:valid + span{
+    display: none;
+}
+#fullName:valid + span{
+    display: none;
+}
+#password:required + span::after, #rePassword:required + span::after{
+    content: "fild is required";
+}
+#password:valid + span{
+    display: none;
+}
+#rePassword:valid + span{
+    display: none;
+}
+#language:valid + span::after{
+    content: "done";
+}
+#merrid{
+    display: none;
+}
+#merrid + label{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    background-image: url(../img/no.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-radius: 50%;
+}
+#merrid:checked + label{
+    background-image: url(../img/yes.png);
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* 
+ul li a{
+    text-decoration: none;
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{ list-style-type: none; display: flex; gap: 2em; }
+main{ display: flex; justify-content: space-between;}
+main > div{ width: 70%;}
+main > aside{ width: 27%;}
+aside video{ width: 100%;}
+aside audio{ width: 100%;}
+.banner{ text-align: center;}
+

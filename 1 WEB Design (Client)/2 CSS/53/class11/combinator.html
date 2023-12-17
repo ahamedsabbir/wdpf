@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinator</title>
+    <style>
+        div#d1 > p { color: #ff0000}
+        input[required] + label::after{content: '*'; color:red}
+        input[required]:required{ border-color:pink ;}
+        input[required]:valid{ border-color:green ;}
+        input[required]:invalid{ border-color:red ;}
+        
+        label { float: left; display: inline-block; width: 100px; }
+        form div{ margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <pre>
+        <h3>
+        There are four different combinators in CSS:
+            descendant selector (space)
+            child selector (>)
+            adjacent sibling selector (+)
+            general sibling selector (~)
+        </h3>
+    </pre>
+    <hr>
+    <h3>child combinator : &gt;</h3>
+    <div id="d1">
+        <p>Para 1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, repudiandae quis! Laudantium, nihil quasi! Repellat harum, nam, corrupti deleniti ut deserunt saepe molestias vel laudantium corporis reiciendis nemo iste quaerat?</p>
+        <div>
+            <p>Para 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore doloremque quibusdam doloribus! Illo reiciendis soluta nobis hic officiis quisquam eveniet fugiat deleniti animi saepe, autem eaque rerum dolor dolores?</p>
+        </div>
+        <p>para3: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, sunt. Sit voluptate asperiores deleniti sint repellat, quas, velit debitis magnam nihil facere error nostrum impedit, quos officia? Necessitatibus, perferendis rerum.</p>
+    </div>
+    <h3>Adjacent sibling combinator :  + </h3>
+    <form action="">
+        <div>            
+            <input type="text" name="" id="" required minlength="4">
+            <label for="">User Name</label>
+            
+        </div>
+        <div>
+            <input type="email" name="" id="" required>
+            <label for="">User Email</label>
+        </div>
+        <div>
+            <input type="date" name="" id="" required>
+            <label for="">User DOB</label>
+        </div>
+        <div>
+            <input type="password" name="" id="" required>
+            <label for="">Password</label>
+        </div>
+        <div>
+            <input type="submit" name="" id="">
+            <label for=""></label>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{ background-color: aqua;}
+        input:disabled{ background-color:gray}
+        input[type='radio'],input[type='checkbox']{ display: none;}
+        /* input[type='radio']:checked+label{ border:1px solid green} */
+        input[type='radio']+label{ border: 1px solid gray;padding: 5px;}
+        input[type='radio']:checked+label{ background-color: green;}
+        input[type='checkbox']+label{ border: 1px solid gray;padding: 5px;}
+        input[type='checkbox']:checked+label{ background-color: green;}
+        input[required] + label{ display: inline-block; float: left; width: 150px;}
+        input[required] + label::after{ content: "*"; color: red;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+        <input type="text" required> <label for="">User Name</label>
+    </div>
+    <div>
+        <input type="text" required> <label for="">phone</label>
+    </div>
+        <input type="text" disabled>
+        <input type="text" disabled>
+        <input type="text"> <hr>
+        <div>
+            <label class="gender" for="">Gender: </label>
+            <input type="radio" name="s" id="m"> <label for="m">Male</label>
+            <input type="radio" name="s" id="fm"> <label for="fm">FeMale</label>
+            <input type="radio" name="s" id="ot"> <label for="ot">Other</label>
+        </div>
+        <hr>
+        <div>
+            <label class="hobby" for="">Hobby: </label>
+            <input type="checkbox" name="h" id="reading"> <label for="reading">Reading</label>
+            <input type="checkbox" name="h" id="writing"> <label for="writing">Writing</label>
+            
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+create a website with html and css.
+
+site has:
+header with top menu, logo and search box
+site has sidebar and main content bar jara pasapasi thakbe
+site should have some content like text, audio, video
+NO LOREM
+site has footer with banner image
+
+
+create your portfolio site: home, about me(education,hobbies, works), my profile pictures, my favourite plaecs, contact me.
+
+if possible use theme switcher  

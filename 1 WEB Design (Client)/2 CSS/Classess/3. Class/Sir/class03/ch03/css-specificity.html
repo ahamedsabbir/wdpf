@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .def {
+            color: pink
+        }
+
+        * {
+            color: aqua;
+        }
+
+        h1 {
+            color: red !important;
+        }
+
+        .abc {
+            color: green;
+        }
+
+        #xyz {
+            color: blue
+        }
+
+        img#topimg {
+            width: 50%;
+            display: block;
+            margin: auto;
+            rotate: 5deg;
+        }
+        img{
+            overflow: hidden;
+            transition: all 5s;
+            filter: grayscale(100%);
+        }
+        img:hover{
+            border:2px solid green;
+            /* rotate: 180deg; */
+            /* rotate: 200grad; */
+            /* rotate: 6.2832rad; */
+            rotate: 2turn;
+            /* width: 350px; */
+            filter: grayscale(00%);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="xyz" class="abc def" style="color: yellow;">testing css specificity</h1>
+    <img id="topimg" src="jon-parry-C8eSYwQkwHw-unsplash.jpg" alt="">
+    <hr>
+    <img src="https://picsum.photos/id/201/300/200" alt="">
+    <img src="https://picsum.photos/id/202/300/200" alt="">
+    <img src="https://picsum.photos/id/203/300/200" alt="">
+    <img src="https://picsum.photos/id/204/300/200" alt="">
+    <img src="https://picsum.photos/id/205/300/200" alt="">
+    <img src="https://picsum.photos/id/206/300/200" alt="">
+    <img src="https://picsum.photos/id/207/300/200" alt="">
+    <img src="https://picsum.photos/id/208/300/200" alt="">
+    <img src="https://picsum.photos/id/209/300/200" alt="">
+    <img src="https://picsum.photos/id/210/300/200" alt="">
+    <img src="https://picsum.photos/id/211/300/200" alt="">
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+        <form action="">
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="userName">User Name</label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" id="userName" pattern="[A-Za-z9-0]{3, 6}" required/>
+                    <span>filed is invalid</span>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" id="fullName" pattern="[A-Za-z9-0]{6}" required>
+                    <span>filed is invalid</span>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="password">Password</label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" id="password" required>
+                    <span>You </span>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="rePassword">Re-type Password</label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" id="rePassword" required>
+                    <span>You </span>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv clear">
+                    <span>Gender</span>
+                </div>
+                <div class="inputDiv">
+                    <div style="display:inline-block; text-align: center;">
+                        <input type="radio" id="male" name="gender">
+                        <label for="male" class="genderRadion"></label><br/>
+                        <span style="margin: 0; padding: 0;">M</span>
+                    </div>
+                    <div style="display:inline-block; text-align: center;">
+                        <input type="radio" id="female" name="gender">
+                        <label for="female" class="genderRadion"></label><br/>
+                        <span style="margin: 0; padding: 0;">F</span>
+                    </div>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="language">Language</label>
+                </div>
+                <div class="inputDiv">
+                    <select name="" id="language" required>
+                        <option></option>
+                        <option value="english">English</option>
+                        <option value="bangla">Bangla</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="japanese">Japanese</option>
+                    </select>
+                    <span></span>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <span>Merrid</span>
+                </div>
+                <div class="inputDiv">
+                    <input type="checkbox" name="merrid" id="merrid">
+                    <label for="merrid"></label>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">
+                    <label for="comment">Comment</label>
+                </div>
+                <div class="inputDiv">
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="itemDiv">
+                <div class="labelDiv">&nbsp;</div>
+                <div class="inputDiv">
+                    <input type="image" src="assets/img/submit.png" alt="">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

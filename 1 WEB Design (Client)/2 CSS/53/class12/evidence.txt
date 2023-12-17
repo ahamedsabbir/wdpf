@@ -1,0 +1,17 @@
+1.	Main Menu 
+	Home
+	Search Book
+	Upload Book
+	The News	
+Show the news of last 5 new books arrival
+	User Registration
+2.	Top Menu
+a.	About Us
+b.	Features
+Show an article to describe about the features of the site
+c.	Contact Us
+Show contact List
+3.	Search option
+4.	Bottom Banner
+Different Book Picture 
+5.	There must be logo in company profile. 
