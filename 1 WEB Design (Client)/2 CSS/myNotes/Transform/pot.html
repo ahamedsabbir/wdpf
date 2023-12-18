@@ -1,0 +1,209 @@
+<html>
+
+<head>
+    <style>
+        .pot-top {
+            width: 100px;
+            height: 20px;
+            background-color: #FF7043;
+            top: 200px;
+            left: 300px;
+            position: absolute;
+        }
+
+        .pot-bot {
+            width: 50px;
+            height: 0px;
+            position: absolute;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 50px solid #FF7043;
+            top: 220px;
+            left: 310px;
+            z-index: 5;
+
+        }
+
+        .pot-top-shadow {
+            width: 72px;
+            height: 0px;
+            position: absolute;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 10px solid #F4511E;
+            top: 220px;
+            left: 310px;
+            z-index: 10;
+
+        }
+
+        .plant-left {
+            height: 80px;
+            width: 30px;
+            background-color: #4CAF50;
+            border-radius: 10px 10px 0px 0px;
+            position: absolute;
+            left: 300px;
+            top: 140px;
+            z-index: -1;
+            transform: rotate(-20deg);
+        }
+
+        .plant-middle {
+            height: 100px;
+            width: 40px;
+            background-color: #43A047;
+            border-radius: 10px 10px 0px 0px;
+            position: absolute;
+            left: 330px;
+            top: 120px;
+            z-index: -1;
+            transform: rotate(0deg);
+        }
+
+        .plant-right {
+            height: 70px;
+            width: 30px;
+            background-color: #7CB342;
+            border-radius: 10px 10px 0px 0px;
+            position: absolute;
+            left: 375px;
+            top: 140px;
+            z-index: -1;
+            transform: rotate(25deg);
+        }
+
+        .flower {
+            width: 0px;
+            height: 0px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #E91E63;
+            border-radius: 0px 0px 70px 70px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        .flower-petal2 {
+            transform: rotate(45deg);
+            left: 105px;
+        }
+
+        .flower-petal3 {
+            transform: rotate(-45deg);
+            left: 95px;
+        }
+
+        .blossom {
+            left: 195px;
+            top: 24px;
+            position: absolute;
+            z-index: -5;
+        }
+
+        .flower-base {
+            width: 16px;
+            height: 16px;
+            background-color: #E91E63;
+            border-radius: 0px 0px 100px 100px;
+            top: 110px;
+            left: 102px;
+            position: absolute;
+        }
+
+        .blossom2 {
+            left: 240px;
+            top: 5px;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            z-index: -5;
+        }
+
+        .blossom3 {
+            left: 290px;
+            top: 25px;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            z-index: -5;
+        }
+
+        .middle-line1 {
+            height: 100px;
+            width: 1px;
+            background-color: #388E3C;
+            position: absolute;
+            left: 340px;
+            top: 120px;
+            z-index: -1;
+
+        }
+
+        .middle-line2 {
+            height: 100px;
+            width: 1px;
+            background-color: #388E3C;
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            z-index: -1;
+
+        }
+
+        .middle-line3 {
+            height: 100px;
+            width: 1px;
+            background-color: #388E3C;
+            position: absolute;
+            left: 360px;
+            top: 120px;
+            z-index: -1;
+
+        }
+
+        .text {
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+            position: absolute;
+            top: 290px;
+            left: 300px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pot-top"></div>
+    <div class="pot-top-shadow"></div>
+    <div class="pot-bot"></div>
+    <div class="plant-left"></div>
+    <div class="plant-middle"></div>
+    <div class="plant-right"></div>
+    <div class="flower1"></div>
+    <div class="blossom">
+        <div class="flower-petal1 flower"></div>
+        <div class="flower-petal2 flower"></div>
+        <div class="flower-petal3 flower"></div>
+        <div class="hflower-base"></div>
+    </div>
+    <div class="blossom2">
+        <div class="flower-petal1 flower"></div>
+        <div class="flower-petal2 flower"></div>
+        <div class="flower-petal3 flower"></div>
+        <div class="hflower-base"></div>
+    </div>
+    <div class="blossom3">
+        <div class="flower-petal1 flower"></div>
+        <div class="flower-petal2 flower"></div>
+        <div class="flower-petal3 flower"></div>
+        <div class="hflower-base"></div>
+    </div>
+    <div class="middle-line1"></div>
+    <div class="middle-line2"></div>
+    <div class="middle-line3"></div>
+    <div class="text">My css pot</div>
+</body>
+
+</html>

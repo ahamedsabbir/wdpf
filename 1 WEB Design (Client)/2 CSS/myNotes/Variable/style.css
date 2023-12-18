@@ -1,0 +1,10 @@
+:root{
+    --water: #1e90ff;
+    --red: #d10f0f;
+}
+body{
+    --body-blue: #0000ff; /* new local variable */
+    background-color: var(--body-blue);
+    width: 500px;
+    height: 500px;
+}

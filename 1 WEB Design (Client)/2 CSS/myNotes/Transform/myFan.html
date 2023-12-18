@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* The animation code */
+        @keyframes example {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+        }
+        /* The element to apply the animation to */
+        .mainDiv{
+            position: relative;
+            margin:200px auto;
+            width: 50%;
+        }
+        .img01 {
+            position: absolute;
+            width: 100px; 
+            height: 100px;
+        }
+        .rotedFunction{
+            position: absolute;
+            width: 100px; 
+            height: 100px;
+            animation-name: example;
+            animation-duration: 30ms;
+            animation-iteration-count: infinite;
+        }
+        .fan01{
+            position: absolute;
+            background-color: rgb(255, 0, 0);
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            top: -12px;
+            left: -12px;
+        }
+        .fan02{
+            position: absolute;
+            background-color: brown;
+            border-radius: 0px 0px 32px 32px;
+            width: 40px;
+            height: 110px;
+            top: 77px;
+            left: 31px;
+        }
+        .fan03{
+            position: absolute;
+            background-color: rgb(24, 22, 22);
+            width: 16px;
+            height: 266px;
+            top: 49px;
+            left: 42px;
+        }
+        .fan05{
+            position: absolute;
+            background-color: rgb(248, 117, 117);
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            top: 149px;
+            left: 42px;
+        }
+        .fan05green{
+            position: absolute;
+            background-color: rgb(19, 180, 46);
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            top: 149px;
+            left: 42px;
+        }
+        .fan06{
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            border-radius: 25px 25px 5px 5px;
+            width: 73px;
+            height: 20px;
+            top: 303px;
+            left: 12px;
+        }
+        .fan07{
+            color: aliceblue;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px 5px 5px 20px;
+            width: 142px;
+            height: 21px;
+            top: 140px;
+            left: 75px;
+            padding: 8px;
+        }
+        #fanAudio{
+            display: none;
+        }
+        #startText{
+            background-color: bisque;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <audio src="an-oscillating-fan-23785.mp3" controls loop id="fanAudio" ></audio>
+    <div class="mainDiv">
+        <div class="fan03"></div>
+        <div class="fan02"></div>
+        <div class="fan01"></div>
+        <img class="img01" id="fanPopelar" src="997867-200.png" alt="" />
+        <div class="fan05" id="fanSwiitch" onclick="fanSwiitch()"></div>
+        <div class="fan06"></div>
+        <div class="fan07">
+            <p>Click Here to Fan <span id="startText">off</span>.</p>
+        </div>
+    </div>
+    <script>
+        var i = 0;
+       function fanSwiitch(){
+            i += 1;
+            console.log(i);
+            if(i%2 == 0){
+                document.getElementById("fanAudio").pause();
+                var fanPopelar = document.getElementById('fanPopelar').classList.remove("rotedFunction");
+                var fanPopelar = document.getElementById('fanSwiitch').classList.remove("fan05green");
+                var fanPopelar = document.getElementById('startText').innerHTML = "off";
+            }else{
+                document.getElementById("fanAudio").play();
+                var fanPopelar = document.getElementById('fanPopelar').classList.add('rotedFunction');
+                var fanPopelar = document.getElementById('fanSwiitch').classList.add('fan05green');
+                var fanPopelar = document.getElementById('startText').innerHTML = "on";
+            } 
+        }
+    </script>
+</body>
+</html>

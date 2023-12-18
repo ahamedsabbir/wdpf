@@ -1,0 +1,4 @@
+getElementById("idName");
+getElementsByClassName("className");
+getElementsByName("name")
+getElementsByTagName("tagName")[0]

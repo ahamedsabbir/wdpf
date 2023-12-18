@@ -1,0 +1,5 @@
+onload
+onclick
+onsubmit
+onhover
+onfocas

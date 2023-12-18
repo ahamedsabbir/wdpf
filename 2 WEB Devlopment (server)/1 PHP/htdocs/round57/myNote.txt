@@ -1,0 +1,5 @@
+
+PHP Extension
+PHP Intelephense
+PHP IntelliSense
+PHP Debug

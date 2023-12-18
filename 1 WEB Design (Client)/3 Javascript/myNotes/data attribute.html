@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="myElement" data-type="example" data-value="42">Click me</div> -->
+    <input id="myElement" data-type="example" data-value="4234" value="click" />
+    <!-- <script>
+        // Get the element by its ID
+        var myElement = document.getElementById('myElement');
+
+        // Access the value of the data-type attribute
+        var dataTypeValue = myElement.getAttribute('data-type');
+
+        // Access the value of the data-value attribute
+        var dataValue = myElement.getAttribute('data-value');
+
+        // Log the values to the console
+        console.log('data-type:', dataTypeValue);
+        console.log('data-value:', dataValue);
+    </script> -->
+    <script>
+        // Access the value of the data-type attribute using dataset
+        var dataTypeValue = myElement.dataset.type;
+        // Access the value of the data-value attribute using dataset
+        var dataValue = myElement.dataset.value;
+        // Log the values to the console
+        console.log('data-type:', dataTypeValue);
+        console.log('data-value:', dataValue);
+    </script>
+</body>
+
+</html>

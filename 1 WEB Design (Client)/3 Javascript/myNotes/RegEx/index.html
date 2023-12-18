@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+    <style>
+        .mainDiv{
+            margin: 0 auto;
+            width: 80%;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        tr {
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            /* text-align: center; */
+            vertical-align: middle;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            /*text-align: center;*/
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>https://regexr.com/</h1>
+    <div class="mainDiv">
+        <table>
+            <caption><h2>Modifiers</h2></caption>
+            <tr>
+                <th>Modifiers </th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>//g</code></td>
+                <td>Perform a global match (find all matches rather than stopping after the first match)</td>
+            </tr>
+            <tr>
+                <td><code>//i</code></td>
+                <td>Perform case-insensitive matching</td>
+            </tr>
+            <tr>
+                <td><code>//m</code></td>
+                <td>Perform multiline matching</td>
+            </tr>
+        </table>
+        <table>
+            <caption><h2>Quantifiers</h2></caption>
+            <tr>
+                <th>Quantifiers</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>n+</code></td>
+                <td>Matches any string that contains at least one n</td>
+            </tr>
+            <tr>
+                <td><code>n*</code></td>
+                <td>Matches any string that contains zero or more occurrences of n</td>
+            </tr>
+            <tr>
+                <td><code>n?</code></td>
+                <td>Matches any string that contains zero or one occurrences of n</td>
+            </tr>
+            <tr>
+                <td><code>^n</code></td>
+                <td>The ^n quantifier matches any string with n at the beginning of it.</td>
+            </tr>
+            <tr>
+                <td><code>n$</code></td>
+                <td>The n$ quantifier matches any string with n at the end of it.</td>
+            </tr>
+            <tr>
+                <td><code>.</code></td>
+                <td>all Character</td>
+            </tr>
+            <tr>
+                <td><code>|</code></td>
+                <td>two match</td>
+            </tr>
+            <tr>
+                <td><code>()</code></td>
+                <td>group korar jonno.</td>
+            </tr>
+        </table>
+        <table>
+            <caption><h2>Metacharacters</h2></caption>
+            <tr>
+                <th>Metacharacter </th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>\d</code></td>
+                <td>Find a digit</td>
+            </tr>
+            <tr>
+                <td><code>\w</code></td>
+                <td>Find a word</td>
+            </tr>
+            <tr>
+                <td><code>\s</code></td>
+                <td>Find a space</td>
+            </tr>
+        </table>
+        <table>
+            <caption><h2>language</h2></caption>
+            <tr>
+                <th>Code</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>html</code></td>
+                <td>pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"</td>
+            </tr>
+            <tr>
+                <td><code>javascript</code></td>
+                <td>var pattern = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/</td>
+            </tr>
+            <tr>
+                <td><code>php</code></td>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <caption><h2>Regular Expression Patterns</h2></caption>
+            <tr>
+                <th>Expression</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>/pattern/modifiers</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/color/gi</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/colou?r/</code></td>
+                <td>ekhane u thakteo pare nao pare. u optional.</td>
+            </tr>
+            <tr>
+                <td><code>/colour*/</code></td>
+                <td>r 0 ba tar besi</td>
+            </tr>
+            <tr>
+                <td><code>/colour+/</code></td>
+                <td>r 1 ba tar besi thakbe</td>
+            </tr>
+            <tr>
+                <td><code>/^hello/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/^(hello sabbir)/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/hello$/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/[abc]/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/[^abc]/</code></td>
+                <td>abc bade sob gulo select korbe.</td>
+            </tr>
+            <tr>
+                <td><code>/[abc]{1}/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/[abc]{3}/</code></td>
+                <td>3 ta nibe</td>
+            </tr>
+            <tr>
+                <td><code>/[abc]{1,3}/</code></td>
+                <td>1 theke 3 ta nibe</td>
+            </tr>
+            <tr>
+                <td><code>/[a-zA-Z0-9]{1,3}/</code></td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td><code>/(red|green)/g</code></td>
+                <td>description</td>
+            </tr>
+        </table>
+        <table>
+            <caption><h2>Example</h2></caption>
+            <tr>
+                <th>code</th>
+                <th>description</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Code</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>1. Function Declarations</h2>
+    <script>
+        function norFunc(a, b) {
+            return a * b;
+        }
+        document.write(norFunc(1, 2));
+    </script>
+    <h2>2. Function Expressions</h2>
+    <script>
+        const x = function (a, b) {
+            return a * b;
+        };
+        document.write(norFunc(10, 2));
+    </script>
+    <h2>3. Arrow Function</h2>
+    <script>
+        var arrFunc = (a, b) => {
+            return a * b;
+        }
+        document.write(arrFunc(8, 2));
+    </script>
+    <h2>4. The Function() Constructor</h2>
+    <script>
+        const myFunction = new Function("a", "b", "return a * b");
+        document.write(myFunction(4, 3));
+    </script>
+    <h2>5. Self-Invoking Functions</h2>
+    <script>
+        (function () {
+            document.write("Hello! I called myself");
+        })();
+    </script>
+</body>
+
+</html>
