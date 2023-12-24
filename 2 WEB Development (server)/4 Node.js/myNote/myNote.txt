@@ -1,0 +1,6 @@
+1. npm install
+2. local modul
+3. build in modul (fs, path, http, os, url) egulo install korte hoy na.
+4. externel modul (nodemon) egulo install korte hoy.
+5. create server
+6. routing

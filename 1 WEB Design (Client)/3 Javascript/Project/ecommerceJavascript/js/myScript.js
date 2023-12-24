@@ -5,7 +5,7 @@ async function getArray(find) {
     //jsonData.find("");
 }
 
-async function getCatArray() {
+(async function getCatArray() {
     let cat = new Set();
     var catResult = "";
     const res = await fetch('https://dummyjson.com/products?limit=100');
@@ -14,11 +14,10 @@ async function getCatArray() {
         cat.add(product.category);
     });
     cat.forEach(e => {
-        catResult += `<a class="dropdown-item" href="category.html">${e}</a>`;
+        catResult += `<a class="dropdown-item" href="category.html?cat=${e}">${e}</a>`;
     });
     document.getElementById("setCat").innerHTML = catResult;
-}
-getCatArray()
+})();
 function getPost(data) {
     let html = "";
     data.products.forEach(product => {
