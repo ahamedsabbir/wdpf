@@ -1,0 +1,2 @@
+npm init (এই code ব্যাবহার করলে অনেক তথ্য দেয়া লাগে।)
+npm init -y (short cut এ npm install করার পধ্যতি।)

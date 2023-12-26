@@ -1,6 +1,7 @@
 resources/
 exam link.txt
 exam meet url.txt
+node_modules*
 myNotes*
 myNotes.txt*
 git*
