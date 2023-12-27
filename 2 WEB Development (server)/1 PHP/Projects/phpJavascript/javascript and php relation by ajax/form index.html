@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submit Form Using AJAX, PHP and javascript</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <style>
+        #emp_form {
+            width: 320px;
+            height: 300px;
+            border: 2px solid #4AD1E2;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: sans-serif;
+        }
+
+        label {
+            width: 150px;
+            float: left;
+            margin-right: 0.5em;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        input {
+            color: #781351;
+            background: #A2E7F0;
+            border: 2px solid #4AD1E2;
+            margin-bottom: 7px;
+        }
+
+        .submit {
+            color: #000;
+            background: #A2E7F0;
+            border: 2px outset #4AD1E2;
+            font-weight: bold;
+        }
+
+        #clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="emp_form" name="form">
+        <h3>New Employee Registration Form</h3>
+        <div>
+            <label>Username* :</label>
+            <input type="text" name="username" id="username" />
+            <label>Email* :</label>
+            <input type="text" name="email" id="email" />
+            <label></label>
+            <div id="clear"></div>
+            <input id="submit" class="submit" onclick="formsubmit()" type="button" value="Submit">
+        </div>
+    </form>
+    <div id="clear"></div>
+<script>
+function formsubmit() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var formdata = 'uname=' + username + '&emailid=' + email;
+	$.ajax({
+		 type: "GET",
+		 url: "getValue.php",
+		 data: formdata,
+		 cache: false,
+		 success: function(html) {
+		  alert(html);
+		 }
+	});
+}
+</script>
+</body>
+
+</html>
