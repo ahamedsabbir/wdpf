@@ -1,0 +1,4 @@
+1. class এর নাম ClassName হবে।
+2. object তৈরী করার সময় Obj শব্দটা প্রথমে থাকবে।
+3. function তৈরী করার সময় শেষে Func এই শব্দটা থাকাবে।
+4. database থেকে foreach করে data নিয়ে array তে রূপান্তর করে কাজ করা ভালো।

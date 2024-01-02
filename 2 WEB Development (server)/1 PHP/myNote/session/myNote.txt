@@ -1,0 +1,5 @@
+session এর কাজ শুরু করার আগে session start করে নিতে হবে।
+session_start();
+$_SESSION['username'] = "Jason";
+session_id();
+session_unset();
